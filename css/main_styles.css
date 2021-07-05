@@ -1,8 +1,4 @@
-*/Esto es un comentario*/
-
-
 :root{
-    */Colores*/
     --wine: #4B1A27;
     --gray: #C4C1C6;
     --soft-gray: #ebeaef;
@@ -21,33 +17,86 @@ html{
     font-family: 'Oxygen', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 
 header{
-    position: relative; 
+    width: 100%;
+    min-width: 70px;
+    height: 60px;
+    
+ }
+
+
+header nav{
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-width: 320px;
-    height: 150px;
-    text-align: center;
-    background-color: gray;
+    box-shadow: 0 1px 10px gray;
+    justify-content: flex-end;
+}
+
+ nav .nav--right-section{
+     font-size: 14px;
+     font-weight: 500;
+     align-items: center;
+     width: auto;
+     height: 50px;
+     display: inline-flex;
+     list-style: none; 
+}
+nav .nav--right-section a{
+    color: grey;
+    margin: 0px 10px 0px 10px;
 }
 
 
-.header--menu-container{
-    margin: 0;
-    padding: 0;
+main{
     width: 100%;
-    height: 50px;
+    margin-top: 50px; 
+    text-align: justify;
+    font-size: 13px;
+    
+}
+main .main--section{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 35px;
+}
+
+main .main--section-description{
+    width: 80%;
+    /*border: 1px solid #4B1A27;*/
+}
+main .main--section-description p{
+    margin: 5px 10px 5px 10px;
+}
+
+
+
+
+footer{
+    margin-top: 50px;
     text-align: right;
-    background-color: var(--wine);
-    box-shadow: brown;
+}
+footer section{
+    display: flex;
+    justify-content: flex-end;
 }
 
-.header--title-container{
-    margin: 0;
-    padding: 0;
-    height: 90px;
-    justify-content: center;
-    text-align: center;
+.footer--section-right ul{
+    justify-self: right;
+    display: inline-flex;
+    list-style: none;
+}
+
+.footer--section-right a{
+    margin: 0px 10px 0px 10px;
 }
