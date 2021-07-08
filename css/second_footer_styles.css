@@ -69,14 +69,21 @@ footer .footer--section-right .twitter-icon{
     box-shadow: 0px 0px 10px 2px rgb(202, 202, 202);
     border-radius: 60px;
     background-color: rgb(202, 202, 202);
+    transform: scale(1.1);
+    transition: all .4s ease-in-out;
+    
 }
 .footer--section-right .twitter-icon:hover{
     box-shadow: 0px 0px 10px 2px rgb(202, 202, 202);
     border-radius: 60px;
     background-color: rgb(202, 202, 202);
+    transform: scale(1.1);
+    transition: all .4s ease-in-out;
 }
 .footer--section-right .github-icon:hover{
     box-shadow: 0px 0px 10px 2px rgb(202, 202, 202);
     border-radius: 60px;
     background-color: rgb(202, 202, 202);
+    transform: scale(1.1);
+    transition: all .4s ease-in-out;
 }
