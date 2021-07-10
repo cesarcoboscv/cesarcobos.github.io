@@ -1,7 +1,9 @@
 :root{
-    --wine: #4B1A27;
+    --background: powderblue;
     --gray: #C4C1C6;
     --soft-gray: #ebeaef;
+    --title: 4vh;
+    --p: 2vh;
 }
 
 
@@ -16,7 +18,6 @@ html{
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    background-color: rgb(231, 231, 231);
 }
 
 a {
@@ -27,9 +28,20 @@ a {
 
 /* Sección del Main */
 
+.landing{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background);
+    font-size: 2.4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 main{
     margin-top: 35px;
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -46,6 +58,9 @@ main section{
 
 .main--section-photo{
     margin-top: 25px;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    ma
     height: auto;
     display: flex;
     flex-wrap: wrap;
