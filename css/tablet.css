@@ -3,7 +3,7 @@
 }
 
 .tablet-menu{
-    width: 300px;
+    width: 350px;
     height: 30px;
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@
     align-items: center;
 }
 .tablet-menu li{
-    margin: 5px;
+    margin: 10px;
     font-size: 1.2rem;
     color: rgb(43, 43,43);
 }
