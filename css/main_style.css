@@ -67,7 +67,7 @@ a {
     display: flex;
     align-items: center;
     position: absolute;
-    bottom: 7.5%;    
+    bottom: 5.5vh;    
 }
 
 
@@ -146,25 +146,20 @@ input:checked ~ ul{
 }
 .ham label{
   display: inline-block;
-  border: 1px solid rgba(43, 43, 43,.6);
-  border-radius: 10px;
   width: 30px;
   height: 30px;
-  line-height: 30px;
   user-select: none;
-  font-size: 3rem;
-  text-align: center;
-  color: rgba(43, 43, 43,.6);
+  background-image: url(https://bl3302files.storage.live.com/y4mBkxNO_YQZfNUkU7oPh_bjs2w3FSxDda9LqNYF0ce_lNeFkDddRscsmOgTvktoyI1v5IXgm7Dh-ol_qa0uyozKoI-bluQzoH32C1p5FpkbhL_3S1KupvOld1kTZe1ek_bCUTrFZidOQkZip2Mlvz86fcMIabiW8ceyQBHYkGA8G6aVf7hp5YIqADdnkkfq7QS?width=32&height=32&cropmode=none);
 }
 
 .ham li{
   display: block;
-  background: transparent;
+  background-color: rgba(255, 255, 255, 0.61);
   margin: 5px 0px;
   padding: 10px;
   list-style: none;
   border-bottom: 1px solid rgba(43, 43, 43, .16);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .ham li:hover{
