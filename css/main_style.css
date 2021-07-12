@@ -274,16 +274,14 @@ main{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 1024px;
-  
+  width: 300px;  
 }
 .portfolio{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    
     height: 80vh;
-    margin: auto 0px;
+    font-size: 1.4rem;
 }
 .portfolio-p1{
   margin: 20px 0px;

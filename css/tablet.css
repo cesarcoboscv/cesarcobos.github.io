@@ -37,7 +37,10 @@
     order: 2;
 }
 
-.porfolio-container{
+.portfolio-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     width: 80%;
     max-width: 1024px;
 }
