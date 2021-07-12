@@ -195,29 +195,33 @@ input:checked ~ ul{
 /* Sección del Main */
 
 
+.divider{
+  height: 30px;
+}
 
-
+main{
+  max-width: 1024px;
+  margin: 0 auto;
+}
 .main-section{
-    margin-top: 35px;
+    margin-top: 60px;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    justify-items: center; 
+
 }
 
 
 .main--section-photo{
-
     margin-top: 25px;
     margin-block-start: 1rem;
     margin-block-end: 1rem;
-    height: auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     font-size: 2rem;
     /* background-color: greenyellow; */
@@ -225,17 +229,22 @@ input:checked ~ ul{
    
 
 .main-description{
-    /* background-color: hotpink; */
-
     font-size: 1.4rem;
     width: 300px;
     height: 200px;
     display: flex;
-    align-items: center; 
+    flex-direction: column;
+    align-items: flex-start; 
     justify-content: center;
     text-align: justify; 
 }
+.main-description p{
+  margin: 15px 0px;
+}
 
+.main-description-p1, .main-description-p3{
+  font-weight: 600;
+}
 .main-photo{  
     order: 2;
     width: 200px;
@@ -245,33 +254,51 @@ input:checked ~ ul{
     align-items: center;
     justify-content: center;
     border-radius: 150px;
-    /* background-color: blue; */
 }
 
 .main-description-fot{
     height: 50px;
     width: 100%;
-    /* background-color: green; */
     text-align: center;
-    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.4rem;
+    display: flex;
+    order: 3;;
 }
 
+.portfolio-divider{
+  height: 45px;
+}
+.portfolio-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1024px;
+  
+}
 .portfolio{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
+    align-items: flex-start;
+    
+    height: 80vh;
+    margin: auto 0px;
+}
+.portfolio-p1{
+  margin: 20px 0px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.contact-divider{
+  height: 45px;
 }
 .contact{
     width: 100%;
     height: 50vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 footer{
     width: 100%;    
