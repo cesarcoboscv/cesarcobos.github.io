@@ -98,7 +98,7 @@ a{
   padding: 5px 10px;
   display: flex;
   position: relative;
-
+  justify-content: center;
   align-items: center;
   top: -4.2vh;
   border-radius: 8px;
@@ -112,11 +112,11 @@ a{
   box-shadow: 0px 0px 3px 1px rgba(43,43,43,.16);
   border-radius: 40px;
 }
-
+/* 
 .hero-button .button span{
   width: 20px;
   height: 20px;
   margin-left: 10px;
   background: url(https://bl3302files.storage.live.com/y4mKPG7ELsnpd8Anw_jhstMZTbD6ERCxvxLDShPYIenNCwDkxhBjEOPXbA1z5enXSnBptIP1ZT_4TF_SV8hTpfuVDCJP_lzF0DpzOAOHfC29-gU8SxKHj2NfK5d6xD3XofYvWTcSN2RSIDrd7D46sr_a7xP3gspCtA3y43kFEeRphcnYOBLHHvKVH-YyTx7ayBh?width=16&height=16&cropmode=none);
   background-repeat: no-repeat;
-}
+} */
