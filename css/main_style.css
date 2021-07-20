@@ -155,3 +155,52 @@ ul{
   border-radius: 40px;
   font-size: 1.5rem;
 }
+
+
+/* Header */
+
+header{
+  width: 100%;
+  height: 40px;
+  /* background-color: red; */
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 3px rgba(43,43,43,.16);
+}
+
+.header-container{
+  width: 95vw;
+  height: 30px;
+  /* background-color: thistle; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container-left{
+  width: 50vw;
+  display: flex;
+  justify-content: flex-start;
+  /* background-color: violet; */
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+.header-container-right{
+  width: 40vh;
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: yellowgreen; */
+}
+
+/* Main */
+
+main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+}
