@@ -69,6 +69,7 @@ ul{
   align-items: center;
   justify-content: space-between;
   margin: 0px 15px;
+  transition: transform 1s ease-in-out;
   
 }
 
@@ -85,7 +86,8 @@ ul{
   background-repeat: no-repeat;
 }
 .hero-nav-button a:hover{
-  transform: scale(1.1);
+  transform: scale(1.3);
+  transition: transform .3s ease-in-out;
 }
 
 .hero-main{
@@ -105,6 +107,7 @@ ul{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  position: absolute;
 }
 
 .hero-container p{
