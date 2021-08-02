@@ -18,13 +18,13 @@
     width: 45vw;
     height: 45vw;
     right: 0vw;
-    top: -15vh;
+    top: -20vh;
   }
   .xlarge{
     width: 60vw;
     height: 60vw;
     right: -10vw;
-    top: -20vh;
+    top: -30vh;
   }
 .hero-nav{
     order:1;
