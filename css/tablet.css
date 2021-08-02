@@ -1,20 +1,22 @@
-.hero-section{
-    display: flex;
+.hero-container{
     flex-direction: row;
 }
+.hero-nav{
+    order:1;
+    z-index: 2;
+}
 .hero-main{
-    order: 1;
-    display:flex;
-    justify-content: flex-start;
+    order:2;
+    top:12vh;
 }
 .hero-button{
-    order: 2;
-    height: 70vh;
-    background: linear-gradient(var(--hero-background),var(--hero-background), var(--main-background));
+    order: 3;
+    height: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 5vw;
+    top:50vh;
 }
 .hero-button .button{
     width: 180px;
