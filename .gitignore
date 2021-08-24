@@ -2,3 +2,8 @@
 *.jpg
 *png
 *.json
+*.config
+*.scss
+*.pug
+/components
+/css/components
