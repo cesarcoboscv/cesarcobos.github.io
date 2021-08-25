@@ -27,7 +27,7 @@ header {
 }
 
 .nav__container {
-  width: 100%;
+  width: 80%;
   max-width: 1250px;
   height: 60px;
   display: -webkit-box;
