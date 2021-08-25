@@ -27,7 +27,7 @@ header {
 }
 
 .nav__container {
-  width: 80%;
+  width: 90%;
   max-width: 1250px;
   height: 60px;
   display: -webkit-box;
@@ -135,6 +135,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  right: 0px;
 }
 .nav__container--right ul {
   display: -webkit-box;
