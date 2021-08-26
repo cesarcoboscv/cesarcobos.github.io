@@ -302,7 +302,7 @@ main .blog__content button a {
 
 footer {
   width: 100%;
-  height: 80px;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,12 +318,12 @@ footer {
           align-items: center;
   background-color: #efefef;
   position: static;
-  bottom: 0;
 }
-footer .footer__content {
+
+.footer__content {
   width: 85%;
   max-width: 1500px;
-  height: 50px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,9 +333,8 @@ footer .footer__content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5vw 2vw;
 }
-footer .footer__content--left, footer .footer__content--right {
+.footer__content--left, .footer__content--right {
   font-size: 1.1rem;
   font-style: italic;
   font-weight: 300;
