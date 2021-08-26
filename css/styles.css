@@ -239,7 +239,7 @@ main .main__content {
   padding: 30px 2vw;
 }
 main .blog {
-  width: 100%;
+  width: 80%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,9 +247,10 @@ main .blog {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 main .blog__content {
   width: 80%;
@@ -257,12 +258,8 @@ main .blog__content {
   height: auto;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 35px;
 }
 main .blog__content button {
   display: -webkit-box;
@@ -274,14 +271,13 @@ main .blog__content button {
           flex-direction: column;
   text-align: left;
   width: 90%;
-  max-width: 280px;
   height: auto;
   text-align: left;
   border: none;
   border-radius: 20px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #e0e0e0), color-stop(99%, white));
-  background: linear-gradient(0deg, #e0e0e0 1%, white 99%);
-  padding: 10px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, rgba(88, 188, 255, 0.123)), color-stop(99%, white));
+  background: linear-gradient(0deg, rgba(88, 188, 255, 0.123) 1%, white 99%);
+  padding: 10px 20px;
 }
 main .blog__content button a {
   text-decoration: none;
