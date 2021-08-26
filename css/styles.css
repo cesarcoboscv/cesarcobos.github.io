@@ -11,6 +11,7 @@ html {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  font-family: "Blinker", sans-serif;
 }
 
 header {
@@ -64,10 +65,11 @@ header {
 }
 .nav__container--left .menu__ham a {
   text-decoration: none;
-  color: black;
-  font-size: 1.4rem;
+  color: #242424;
+  font-size: 1.5rem;
   -webkit-font-kerning: none;
           font-kerning: none;
+  font-weight: 600;
 }
 .nav__container--left .menu__ham ul {
   display: none;
@@ -107,7 +109,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 5px 20px 5px 0px;
+  margin: 8px 20px 5px 0px;
   padding: 10px;
   list-style: none;
   border-bottom: 1px solid black;
@@ -121,7 +123,9 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  left: 60px;
+  left: 70px;
+  font-size: 2rem;
+  font-weight: 800;
 }
 .nav__container--right {
   width: 80px;
@@ -202,10 +206,18 @@ main {
           align-items: center;
 }
 main .main__content {
-  width: 85%;
+  width: 75%;
   max-width: 1250px;
   height: auto;
   padding: 60px 2vw;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-font-kerning: none;
+          font-kerning: none;
+  line-height: 130%;
+}
+main .main__content p {
+  margin-bottom: 15px;
 }
 
 footer {
