@@ -217,8 +217,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#3083d0), to(#082167));
-  background-image: linear-gradient(to top, #3083d0 0%, #082167 100%);
+  background-image: radial-gradient(circle 1192px at 21.5% 49.5%, #5b1537 0.1%, black 100.2%);
 }
 main h2, main h3 {
   margin: 20px 0px;
