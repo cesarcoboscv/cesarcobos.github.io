@@ -33,6 +33,9 @@ header {
   top: 0;
   -webkit-box-shadow: 0px 2px 5px rgba(143, 143, 143, 0.24);
           box-shadow: 0px 2px 5px rgba(143, 143, 143, 0.24);
+  background-color: rgba(255, 255, 255, 0.63);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .nav__container {
@@ -48,8 +51,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
 }
 .nav__container--left {
   width: 240px;
@@ -61,14 +62,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .nav__container--left .menu__ham {
   width: auto;
   height: 30px;
   text-align: left;
+  position: absolute;
 }
 .nav__container--left .menu__ham a {
   text-decoration: none;
@@ -131,17 +130,17 @@ header {
 .nav__container--left .menu__ham li:hover {
   text-shadow: 0px 0px 0px black;
 }
-.nav__container h2 {
+.nav__container--left h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  left: 70px;
+  position: relative;
+  left: 50px;
   font-size: 2.2rem;
   font-weight: 800;
 }
 .nav__container--right {
-  width: 80px;
+  width: 90px;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,11 +148,6 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  right: 0px;
 }
 .nav__container--right ul {
   display: -webkit-box;
@@ -222,6 +216,9 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#3083d0), to(#082167));
+  background-image: linear-gradient(to top, #3083d0 0%, #082167 100%);
 }
 main h2, main h3 {
   margin: 20px 0px;
@@ -236,7 +233,10 @@ main .main__content {
   width: 75%;
   max-width: 1250px;
   height: auto;
+  margin: 50px 0px;
   padding: 30px 2vw;
+  border-radius: 20px;
+  border: none;
 }
 main .blog {
   width: 100%;
@@ -254,6 +254,8 @@ main .blog {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: white;
+  padding-bottom: 80px;
 }
 main .blog .title {
   width: 80%;
@@ -283,12 +285,12 @@ main .blog__content button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   height: auto;
   text-align: left;
   border: none;
   border-radius: 20px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, rgba(88, 188, 255, 0.123)), color-stop(99%, white));
-  background: linear-gradient(0deg, rgba(88, 188, 255, 0.123) 1%, white 99%);
   padding: 10px 20px;
 }
 main .blog__content button a {
@@ -300,26 +302,42 @@ main .blog__content button a {
 
 footer {
   width: 100%;
-  height: auto;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #efefef;
+  position: static;
+  bottom: 0;
 }
 footer .footer__content {
   width: 85%;
-  max-width: 1250px;
-  height: auto;
+  max-width: 1500px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5vw 2vw;
+}
+footer .footer__content--left, footer .footer__content--right {
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 300;
+  color: gray;
 }
