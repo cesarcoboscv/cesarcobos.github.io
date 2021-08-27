@@ -12,6 +12,11 @@ html {
       -ms-user-select: none;
           user-select: none;
   font-family: "Blinker", sans-serif;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {
