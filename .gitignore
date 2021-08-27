@@ -1,5 +1,6 @@
 *.svg
 *.jpg
+*.jpeg
 *png
 *.json
 *.config
@@ -7,3 +8,4 @@
 *.pug
 /components
 /css/components
+/assets
