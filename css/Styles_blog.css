@@ -89,14 +89,15 @@ header {
 .nav__container--left .menu__ham ul {
   display: none;
   width: auto;
+  margin-left: -10px;
   background-color: white;
   border: 1px solid rgba(97, 97, 97, 0.281);
-  border-radius: 15px;
+  border-radius: 5px 5px 0px 0px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 80% 95%, 40% 100%, 15% 95%, 0% 100%);
-          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 80% 95%, 40% 100%, 15% 95%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 80% 98%, 40% 100%, 15% 98%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 80% 98%, 40% 100%, 15% 98%, 0% 100%);
   grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
 }
 .nav__container--left .menu__ham input {
@@ -268,6 +269,9 @@ main .secondary__content {
   background-color: white;
   -webkit-clip-path: polygon(0% 0%, 20% 4%, 80% 0%, 100% 5%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 20% 4%, 80% 0%, 100% 5%, 100% 100%, 0% 100%);
+}
+main ::-webkit-progress-bar {
+  background-color: gray;
 }
 
 footer {
