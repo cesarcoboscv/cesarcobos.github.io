@@ -1,0 +1,38 @@
+body {
+  font-size: 1.6rem;
+}
+
+header .menu__ham {
+  display: none;
+}
+header .nav__container--right {
+  display: none;
+}
+header .nav__menu--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 500px;
+  height: 35px;
+}
+header .nav__menu--right a {
+  text-decoration: none;
+  margin: 0px 10px;
+  color: black;
+  font-weight: 600;
+}
+header .nav__menu--right a:hover {
+  text-shadow: 1px 1px 10px rgba(128, 128, 128, 0.384);
+}
+header .nav__menu--right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
