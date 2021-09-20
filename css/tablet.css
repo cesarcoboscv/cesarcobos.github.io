@@ -61,3 +61,36 @@ header .nav__menu--right ul {
           align-items: center;
   list-style: none;
 }
+
+main .about {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .about__content-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+main .about__content-description {
+  padding: 0px 15px;
+}
+main .about__content-photo {
+  background-size: 180px;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+main .blog {
+  -webkit-clip-path: polygon(0% 2%, 23% 10%, 61% 1%, 100% 5%, 99% 71%, 100% 100%, 60% 97%, 24% 100%, 0% 99%, 2% 57%);
+          clip-path: polygon(0% 2%, 23% 10%, 61% 1%, 100% 5%, 99% 71%, 100% 100%, 60% 97%, 24% 100%, 0% 99%, 2% 57%);
+}
+main .blogpage {
+  width: 80%;
+  max-width: 900px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+}
