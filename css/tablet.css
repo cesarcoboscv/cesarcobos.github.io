@@ -1,3 +1,8 @@
+.index-body {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#642b73), to(#c6426e));
+  background-image: linear-gradient(to top, #642b73, #c6426e);
+}
+
 body {
   font-size: 1.6rem;
 }
@@ -44,9 +49,7 @@ header .nav__menu--right {
   margin-right: 30px;
 }
 header .nav__menu--right a {
-  text-decoration: none;
   margin: 0px 10px;
-  color: black;
   font-weight: 600;
 }
 header .nav__menu--right a:hover {
@@ -89,8 +92,12 @@ main .blogpage {
   width: 80%;
   max-width: 900px;
 }
-
-footer {
-  position: relative;
-  bottom: 0;
+main .social__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .social__container a {
+  background-size: 60px;
+  width: 30vw;
 }
