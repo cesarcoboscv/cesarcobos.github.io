@@ -11,7 +11,7 @@ html {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Spartan", sans-serif;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -20,11 +20,8 @@ html::-webkit-scrollbar {
 }
 
 body {
-  font-size: 2rem;
-  font-weight: 200;
   -webkit-font-kerning: none;
           font-kerning: none;
-  line-height: 150%;
 }
 body .background__ {
   width: 100%;
@@ -158,8 +155,8 @@ body .background__ {
   text-shadow: none;
 }
 .hero__content .blink {
-  -webkit-animation: blink-animation 2s steps(5, start) infinite;
-          animation: blink-animation 2s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
+          animation: blink-animation 1.5s steps(5, start) infinite;
 }
 @-webkit-keyframes blink-animation {
   to {
@@ -177,9 +174,10 @@ body .background__ {
   font-style: italic;
 }
 .hero__content .print {
+  font-size: 1.8rem;
   line-height: 250%;
   color: greenyellow;
-  font-family: monospace;
+  font-family: "Space Mono", monospace;
 }
 .hero__content .print .bracket {
   color: white;
@@ -191,11 +189,12 @@ body .background__ {
 }
 .hero__content .print-hello {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 .hero__social {
   width: 80%;
-  height: 100px;
+  height: auto;
+  max-width: 1250px;
   z-index: 1;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -214,7 +213,7 @@ body .background__ {
 }
 .hero__social a {
   width: 100px;
-  height: 100px;
+  height: 80px;
   background-size: 60px;
   -webkit-transition: -webkit-transform 0.6s;
   transition: -webkit-transform 0.6s;
