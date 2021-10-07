@@ -1,5 +1,61 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+header .navbar {
+  width: 80%;
+  height: 45px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .navbar-left, header .navbar-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: 40px;
+  margin: 0px 10px;
+}
+header .navbar-left {
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+header .navbar-right {
+  margin-right: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+header .navbar-right li {
+  list-style: none;
+}
+header .navbar-right a {
+  margin: 0px 10px;
+  color: white;
+}
+
 body .background__ {
-  background-image: url("https://bl3302files.storage.live.com/y4mRoEW30QHEshBe5Zy3QMIFo_7KeuiYJD4_FPpxpFgZPEwSX1ULxd_1SxnN4br4JcfnHd7lpGF59a7nKKPj_4_ouqZtVz5XYMXj98yojpjfcU31ZLuc1HBN2ayzabsFYBZKdi3N5zgZjqBfMmVtVuJMejBPAFK4EkVIaLGi88jOzl43qXiU2JMef28OX3n-onJ?width=2400&height=1644&cropmode=none");
+  background-image: url("https://bl3302files.storage.live.com/y4m_MLjtmrI-J3skrAjVZPwoXbro7zDGnkNQoJ8-a2uXbV7SRlAoNT4JIAJLKA5YOILFK6ogWMNWkP4i1X_f8gN5hrUJ2YTXyU6SIlLeH0UEUlmZWnhD9F0QQ2wrn7BVxvT4ReYJ3Paf04jRWESoE0P1ll4Cep3wfRPEnq-TZA-fOzY4dMdjxlaZIRO5kxdR4e5?width=3456&height=4320&cropmode=none");
+  background-position: center;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .hero__content {
