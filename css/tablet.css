@@ -52,10 +52,10 @@ header .navbar-right a {
 }
 
 body .background__ {
-  background-image: url("https://bl3302files.storage.live.com/y4m_MLjtmrI-J3skrAjVZPwoXbro7zDGnkNQoJ8-a2uXbV7SRlAoNT4JIAJLKA5YOILFK6ogWMNWkP4i1X_f8gN5hrUJ2YTXyU6SIlLeH0UEUlmZWnhD9F0QQ2wrn7BVxvT4ReYJ3Paf04jRWESoE0P1ll4Cep3wfRPEnq-TZA-fOzY4dMdjxlaZIRO5kxdR4e5?width=3456&height=4320&cropmode=none");
+  background-image: url("https://bl3302files.storage.live.com/y4mSX4Ow1OnX16mR_j2i50LsREX7CERJB97dHoASSbGAxnGUMQl7zFFTDmkCxxWe4-3PTkNCI4LG-RQyySD0rjxOCcPiKQZi6VdiqhgpVOkAJBFKwAEV6McdST1Yd-fSTVu-1iQAq_j-BuVpkDWMVwFfpV_xR9H-b4m_IqSqSjNeIEWyxTvjzBqSgMvjEaPz7LP?width=4920&height=3276&cropmode=none");
   background-position: center;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .hero__content {
