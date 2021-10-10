@@ -193,6 +193,7 @@ body a {
   font-weight: 600;
 }
 .hero__content .print-hello {
+  font-family: "Space Mono", monospace;
   color: white;
   font-size: 2.2rem;
 }
