@@ -2,17 +2,16 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: white;
+  height: 75px;
 }
 header .navbar {
-  width: 80%;
+  width: 90%;
+  max-width: 1250px;
   height: 45px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -32,16 +31,14 @@ header .navbar-left, header .navbar-right {
           align-items: center;
   width: auto;
   height: 40px;
-  margin: 0px 10px;
+  margin: 50px;
 }
 header .navbar-left {
-  margin-left: 35px;
   font-size: 1.2rem;
   letter-spacing: 5px;
   font-weight: 900;
 }
 header .navbar-right {
-  margin-right: 35px;
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -52,20 +49,4 @@ header .navbar-right li {
 header .navbar-right a {
   margin: 0px 10px;
   color: white;
-}
-
-body .background__ {
-  background-image: url("https://bl3302files.storage.live.com/y4mSX4Ow1OnX16mR_j2i50LsREX7CERJB97dHoASSbGAxnGUMQl7zFFTDmkCxxWe4-3PTkNCI4LG-RQyySD0rjxOCcPiKQZi6VdiqhgpVOkAJBFKwAEV6McdST1Yd-fSTVu-1iQAq_j-BuVpkDWMVwFfpV_xR9H-b4m_IqSqSjNeIEWyxTvjzBqSgMvjEaPz7LP?width=4920&height=3276&cropmode=none");
-  background-position: center;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-
-.hero__content {
-  margin-top: 20px;
-}
-
-.hero__social {
-  padding-bottom: 30px;
-  margin-top: 15px;
 }
