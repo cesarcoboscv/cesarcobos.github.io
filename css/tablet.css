@@ -3,3 +3,24 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
+
+.hero {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.hero-content {
+  margin-left: 5vw;
+  max-width: 600px;
+}
+.hero__social {
+  margin-left: 15px;
+}
+.hero__social ul, .hero__social li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 21px 0px;
+}
