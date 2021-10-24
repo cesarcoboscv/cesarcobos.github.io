@@ -37,14 +37,14 @@ section {
   font-family: "IBM Plex Mono", monospace;
 }
 .section-title p {
-  color: #1763f1;
+  color: #A58FAA;
 }
 .section-title span {
   color: #494949;
   font-weight: 800;
 }
 .section-title .comma {
-  color: #ce400c;
+  color: #FF5151;
 }
 
 .blur {
@@ -270,14 +270,14 @@ section {
 .print {
   font-size: 1.8rem;
   line-height: 250%;
-  color: greenyellow;
+  color: #DEFF8B;
   font-family: "IBM Plex Mono", monospace;
 }
 .print .bracket {
   color: white;
 }
 .print .comma {
-  color: #ec6a00;
+  color: #FF5151;
 }
 .print .bracket-black {
   color: black;
@@ -286,7 +286,7 @@ section {
 header {
   position: sticky;
   top: 0;
-  background-color: rgba(230, 230, 230, 0.7);
+  background-color: #f6f6f6a2;
   min-height: 75px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -318,6 +318,7 @@ header .navbar-brand {
 
 .aboutme-description, .whatido {
   width: 70%;
+  margin: 25px 0px;
 }
 .aboutme-description .col .fs-1, .whatido .col .fs-1 {
   font-weight: 600;
@@ -344,33 +345,58 @@ header .navbar-brand {
 }
 .col-download .btn {
   width: 150px;
-  height: 45px;
+  height: 40px;
   margin: 25px 10px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 1.2px;
   border-radius: 10px;
-  border: 1px solid #1763f1;
+  border: 1px solid #4C4C6D;
 }
 .col-download .btn-info {
   color: white;
-  background-color: #1763f1;
+  background-color: #4C4C6D;
 }
 .col-download .btn-info:hover {
   background-color: transparent;
-  color: #1763f1;
-  border: 1px solid #1763f1;
+  color: #4C4C6D;
+  border: 1px solid #4C4C6D;
 }
 .col-download .btn-outline-info {
-  color: #ec6a00;
-  border: 1px solid #ec6a00;
+  color: #4C4C6D;
+  border: 1px solid #4C4C6D;
 }
 .col-download .btn-outline-info:hover {
   color: white;
-  background-color: #ec6a00;
-  border: 1px solid #ec6a00;
+  background-color: #4C4C6D;
+  border: 1px solid #4C4C6D;
 }
 .col-download .btn span {
   margin: 0px 10px;
+}
+
+.col-card {
+  margin: 15px 5px;
+}
+.col-card .card {
+  width: 22rem;
+  border-radius: 20px;
+  padding: 10px;
+}
+.col-card .icons {
+  display: inline-block;
+  height: 50px;
+  margin: 5px 5px;
+}
+.col-card span {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 35px;
+}
+.col-card .icons img {
+  margin: 0px 3px;
+  width: 35px;
+  height: 35px;
 }
 
 .blog-section-content {
