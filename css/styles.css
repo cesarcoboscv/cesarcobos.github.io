@@ -148,8 +148,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: 0px -100px 35px 20px rgba(0, 0, 0, 0.85) inset;
-          box-shadow: 0px -100px 35px 20px rgba(0, 0, 0, 0.85) inset;
 }
 .hero .backgrnd {
   width: 100%;
@@ -163,8 +161,8 @@ section {
   z-index: -2;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  -webkit-filter: blur(2px) saturate(0.7);
+          filter: blur(2px) saturate(0.7);
 }
 .hero-content {
   z-index: 1;
@@ -316,17 +314,43 @@ header .navbar-brand {
   margin: 25px 0px;
 }
 
+.bg-img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: clip;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  -webkit-filter: opacity(0.05) blur(5px) grayscale(0.7);
+          filter: opacity(0.05) blur(5px) grayscale(0.7);
+}
+.bg-img .bg-1 {
+  height: 60vh;
+  position: relative;
+  left: 10%;
+}
+
 .aboutme-description, .whatido {
-  width: 70%;
+  width: 70vw;
   margin: 25px 0px;
 }
-.aboutme-description .col .fs-1, .whatido .col .fs-1 {
+.aboutme-description .col .fs-1, .aboutme-description .col-12 .fs-1, .whatido .col .fs-1, .whatido .col-12 .fs-1 {
   font-weight: 600;
   text-transform: uppercase;
 }
-.aboutme-description .col .fs-2, .whatido .col .fs-2 {
-  font-weight: 300;
+.aboutme-description .col .fs-2, .aboutme-description .col-12 .fs-2, .whatido .col .fs-2, .whatido .col-12 .fs-2 {
+  font-weight: 200;
+  letter-spacing: 1px;
   color: gray;
+}
+.aboutme-description .col .fs-3 span, .aboutme-description .col-12 .fs-3 span, .whatido .col .fs-3 span, .whatido .col-12 .fs-3 span {
+  color: #4C4C6D;
+  font-weight: 600;
+}
+.aboutme-description .profile-photo, .whatido .profile-photo {
+  width: 250px;
+  height: auto;
 }
 
 .whatido .fs-1 {
@@ -338,6 +362,12 @@ header .navbar-brand {
 
 .col-image {
   margin: 25px 0px;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+.card-title {
+  font-weight: 600;
 }
 
 .col-download a {
@@ -374,6 +404,16 @@ header .navbar-brand {
   margin: 0px 10px;
 }
 
+.card .back img {
+  height: 200px;
+  z-index: -1;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  -webkit-filter: saturate(250%) blur(3px) opacity(0.1);
+          filter: saturate(250%) blur(3px) opacity(0.1);
+}
+
 .col-card {
   margin: 15px 5px;
 }
@@ -381,20 +421,24 @@ header .navbar-brand {
   width: 22rem;
   border-radius: 20px;
   padding: 10px;
+  background-color: transparent;
 }
 .col-card .icons {
   display: inline-block;
-  height: 50px;
+  height: auto;
   margin: 5px 5px;
+  -webkit-filter: saturate(150%);
+          filter: saturate(150%);
 }
 .col-card span {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   height: 35px;
+  font-weight: 600;
 }
 .col-card .icons img {
-  margin: 0px 3px;
+  margin: 3px 3px;
   width: 35px;
   height: 35px;
 }
