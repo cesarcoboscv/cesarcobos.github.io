@@ -8,4 +8,5 @@
 *.pug
 /components
 /css/components
-/assets
+/assets/img
+/assets/icons
