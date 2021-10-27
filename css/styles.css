@@ -66,6 +66,7 @@ section {
   position: absolute;
   color: white;
   width: 100%;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 }
 .hero-content p {
   line-height: 130%;
@@ -78,20 +79,19 @@ section {
   font-weight: 700;
   letter-spacing: 2px;
   font-size: 3rem !important;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
 .carousel-inner {
   z-index: -1;
-  height: 60vh;
+  height: 80vh;
 }
 .carousel-inner img {
+  width: 100%;
   min-height: 1000px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: grayscale(0.7);
-          filter: grayscale(0.7);
-  bottom: 50px;
+  -webkit-filter: saturate(200%);
+          filter: saturate(200%);
   position: relative;
 }
 
@@ -146,6 +146,7 @@ header .navbar {
 }
 header .nav-item {
   margin: 0px 10px;
+  padding: 0px 5px;
 }
 header .navbar-toggler {
   width: 40px;
@@ -170,8 +171,9 @@ header .navbar-toggler:focus {
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.445);
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.445);
 }
-header .navbar-brand {
-  font-size: 2.2rem;
+header .navbar-brand img {
+  width: 45px;
+  height: 45px;
 }
 
 .aboutme {
@@ -214,15 +216,19 @@ span {
   -webkit-filter: opacity(0.5);
           filter: opacity(0.5);
 }
+.col-image img {
+  width: 100px;
+}
 
 .card-title {
   font-weight: 600;
 }
 
-.col-download a {
+.col a {
   text-decoration: none;
 }
-.col-download .btn {
+
+.col .btn {
   width: 150px;
   height: 40px;
   margin: 25px 10px;
@@ -231,55 +237,47 @@ span {
   border-radius: 10px;
   border: 1px solid #4C4C6D;
 }
-.col-download .btn-info {
+.col .btn-info {
   color: white;
   background-color: #4C4C6D;
 }
-.col-download .btn-info span {
+.col .btn-info span {
   color: white;
 }
-.col-download .btn-info:hover {
+.col .btn-info:hover {
   background-color: transparent;
   color: #4C4C6D;
   border: 1px solid #4C4C6D;
 }
-.col-download .btn-info:hover span {
+.col .btn-info:hover span {
   color: #4C4C6D;
 }
-.col-download .btn-outline-info {
+.col .btn-outline-info {
   color: #4C4C6D;
   border: 1px solid #4C4C6D;
 }
-.col-download .btn-outline-info:hover {
+.col .btn-outline-info:hover {
   color: white;
   background-color: #4C4C6D;
   border: 1px solid #4C4C6D;
 }
-.col-download .btn-outline-info:hover span {
+.col .btn-outline-info:hover span {
   color: white;
 }
-.col-download .btn span {
+.col .btn span {
   margin: 0px 10px;
 }
 
 .col-card {
   margin: 13px 0px;
 }
-.col-card .card-background img {
-  height: 200px;
-  z-index: -1;
-  position: absolute;
-  left: 20%;
-  top: 20%;
-  -webkit-filter: saturate(250%) blur(3px) opacity(0.1);
-          filter: saturate(250%) blur(3px) opacity(0.1);
-}
 .col-card .card {
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 10px;
   background-color: transparent;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  font-size: 0.9rem;
 }
 .col-card .card:hover {
   -webkit-box-shadow: 0px 0px 15px rgba(73, 73, 73, 0.2);
