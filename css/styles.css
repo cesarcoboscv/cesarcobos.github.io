@@ -1,8 +1,20 @@
+.tooltip > .tooltip-inner {
+  background-color: #4C4C6D;
+  padding: 8px;
+  font-style: italic;
+  -webkit-box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.6);
+          box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.6);
+  border-radius: 8px;
+  opacity: 0.7;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: 0;
           box-sizing: 0;
+  color: #4C4C6D;
+  font-family: "Spartan", sans-serif;
 }
 
 html {
@@ -17,34 +29,23 @@ html {
 html::-webkit-scrollbar {
   display: none;
 }
+html a {
+  text-decoration: none;
+}
 
 .divider {
   width: 100%;
   height: 75px;
 }
 
-section {
-  font-family: "Spartan", sans-serif;
-}
-
 .section-title {
-  margin: 25px 0px;
-  font-size: 1.5rem;
   font-family: "IBM Plex Mono", monospace;
 }
 .section-title p {
   color: #9365DB;
 }
-.section-title span {
-  color: #494949;
-  font-weight: 800;
-}
 .section-title .comma {
   color: #FF5151;
-  font-weight: 200;
-}
-.section-title .bracket {
-  font-weight: 200;
 }
 
 .blur {
@@ -63,20 +64,15 @@ section {
 
 .hero-content {
   position: absolute;
-  color: white;
   width: 100%;
   height: 80vh;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-}
-.hero-content p {
-  line-height: 130%;
+  letter-spacing: 0.8px;
 }
 .hero-content .print-hello {
   font-family: "IBM Plex Mono", monospace;
   font-size: 1.1rem;
 }
 .hero-content .hero-title {
-  font-weight: 700;
   letter-spacing: 2px;
   font-size: 3rem !important;
 }
@@ -97,7 +93,6 @@ section {
 }
 
 .print {
-  line-height: 250%;
   color: #DEFF8B;
   font-family: "IBM Plex Mono", monospace;
   font-size: 1.1rem;
@@ -107,9 +102,6 @@ section {
 }
 .print .comma {
   color: #FF5151;
-}
-.print .bracket-black {
-  color: black;
 }
 
 .blink {
@@ -142,18 +134,12 @@ header {
 header .navbar {
   width: 90%;
   max-width: 1200px;
-  position: sticky;
-  top: 0;
-}
-header .nav-item {
-  margin: 0px 10px;
-  padding: 0px 5px;
+  font-weight: 500;
 }
 header .navbar-toggler {
   width: 40px;
   height: 40px;
-  margin: 10px 0px;
-  border: 2px solid #525252;
+  border: 2px solid #4C4C6D;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,42 +151,124 @@ header .navbar-toggler {
       -ms-flex-pack: center;
           justify-content: center;
 }
-header .navbar-toggler i {
-  color: #525252;
-}
 header .navbar-toggler:focus {
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.445);
-          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.445);
+  -webkit-box-shadow: 0px 2px 10px rgba(180, 180, 180, 0.5);
+          box-shadow: 0px 2px 10px rgba(180, 180, 180, 0.5);
 }
 header .navbar-brand img {
   width: 45px;
   height: 45px;
 }
 
-.aboutme {
+.blog {
+  height: calc(100vh - 150px);
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+}
+
+.article-entry {
+  border-radius: 24px;
+  letter-spacing: 0.4px;
+  -webkit-box-shadow: 0px 2px 10px rgba(180, 180, 180, 0.5);
+          box-shadow: 0px 2px 10px rgba(180, 180, 180, 0.5);
+  line-height: 150%;
+  color: #4C4C6D;
+}
+.article-entry .theme {
+  font-family: "IBM Plex Mono", monospace;
+}
+.article-entry img {
   width: 100%;
-  height: auto;
-  margin: 25px 0px;
+  height: 100%;
+  max-width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 24px;
 }
-
-.fs-1 {
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-span {
+.article-entry .btn-read {
   color: #4C4C6D;
   font-weight: 600;
 }
+.article-entry .btn-read:hover {
+  color: cornflowerblue;
+}
+.article-entry .btn-read:hover .bi {
+  color: cornflowerblue;
+  margin-left: 5px;
+}
 
-.aboutme-container {
-  margin-bottom: 25px;
+@media screen and (min-width: 992px) {
+  .article-entry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.aboutme {
+  width: 100%;
+  height: auto;
+  margin: 24px 0px;
+}
+.aboutme .aboutme-container {
   background-color: #f6f6f6a2;
+}
+.aboutme .aboutme-container .btn {
+  letter-spacing: 1.2px;
+  border-radius: 8px;
+}
+.aboutme .aboutme-container .btn-secondary {
+  color: #4C4C6D;
+  background-color: #4C4C6D;
+}
+.aboutme .aboutme-container .btn-secondary svg path {
+  color: white;
+}
+.aboutme .aboutme-container .btn-secondary span {
+  color: white;
+}
+.aboutme .aboutme-container .btn-secondary:hover {
+  background-color: transparent;
+  color: #4C4C6D;
+  border: 1px solid #4C4C6D;
+}
+.aboutme .aboutme-container .btn-secondary:hover svg path {
+  color: #4C4C6D;
+}
+.aboutme .aboutme-container .btn-secondary:hover span {
+  color: #4C4C6D;
+}
+.aboutme .aboutme-container .btn-secondary:focus {
+  -webkit-box-shadow: 0px 0px 5px #4C4C6D;
+          box-shadow: 0px 0px 5px #4C4C6D;
+}
+.aboutme .aboutme-container .btn-outline-secondary {
+  color: #4C4C6D;
+  border: 1px solid #4C4C6D;
+}
+.aboutme .aboutme-container .btn-outline-secondary:hover {
+  color: white;
+  background-color: #4C4C6D;
+  border: 1px solid #4C4C6D;
+}
+.aboutme .aboutme-container .btn-outline-secondary:hover svg path {
+  color: white;
+}
+.aboutme .aboutme-container .btn-outline-secondary:hover span {
+  color: white;
+}
+.aboutme .aboutme-container .btn-outline-secondary:focus {
+  -webkit-box-shadow: 0px 0px 5px #4C4C6D;
+          box-shadow: 0px 0px 5px #4C4C6D;
+}
+
+span {
+  font-weight: 600;
 }
 
 .aboutme-description, .whatido, .card-container {
-  margin: 55px 0px;
-  line-height: 185%;
   letter-spacing: 0.5px;
 }
 .aboutme-description .profile-photo, .whatido .profile-photo, .card-container .profile-photo {
@@ -223,50 +291,6 @@ span {
 
 .card-title {
   font-weight: 600;
-}
-
-.col a {
-  text-decoration: none;
-}
-
-.col .btn {
-  width: 150px;
-  height: 40px;
-  margin: 25px 10px;
-  font-weight: 400;
-  letter-spacing: 1.2px;
-  border-radius: 10px;
-  border: 1px solid #4C4C6D;
-}
-.col .btn-info {
-  color: white;
-  background-color: #4C4C6D;
-}
-.col .btn-info span {
-  color: white;
-}
-.col .btn-info:hover {
-  background-color: transparent;
-  color: #4C4C6D;
-  border: 1px solid #4C4C6D;
-}
-.col .btn-info:hover span {
-  color: #4C4C6D;
-}
-.col .btn-outline-info {
-  color: #4C4C6D;
-  border: 1px solid #4C4C6D;
-}
-.col .btn-outline-info:hover {
-  color: white;
-  background-color: #4C4C6D;
-  border: 1px solid #4C4C6D;
-}
-.col .btn-outline-info:hover span {
-  color: white;
-}
-.col .btn span {
-  margin: 0px 10px;
 }
 
 .col-card {
@@ -304,6 +328,11 @@ span {
   padding: 25px 0px;
 }
 
+@media screen and (max-width: 992px) {
+  * {
+    font-size: 1.03em;
+  }
+}
 .portfolio-section {
   min-height: 100vh;
 }
@@ -361,14 +390,13 @@ span {
 }
 
 .resume-section {
-  background-color: rgba(192, 192, 192, 0.61);
+  background-color: #f6f6f6a2;
 }
 
 .sheet {
-  border-radius: 20px;
+  border-radius: 24px;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
-  width: 80%;
   max-width: 1200px;
   letter-spacing: 1px;
 }
@@ -381,21 +409,24 @@ span {
 
 .resume-name {
   background-color: black;
-  color: white;
   border-radius: 20px 20px 0px 0px;
   letter-spacing: 2px;
 }
 
-.resume-contact a, .resume-contact span {
-  color: black;
-}
 .resume-contact a:hover, .resume-contact span:hover {
+  color: cornflowerblue;
+}
+.resume-contact a:hover path, .resume-contact span:hover path {
   color: cornflowerblue;
 }
 .resume-contact svg {
   width: 25px;
   height: 25px;
   margin-right: 10px;
+}
+
+.social a:hover span, .social a:hover svg path {
+  color: cornflowerblue;
 }
 
 .resume-certificates {
@@ -415,10 +446,6 @@ span {
 .resume-social svg {
   width: 35px;
   height: 35px;
-}
-.resume-social a {
-  color: black;
-  text-decoration: none;
 }
 .resume-social a:hover {
   color: cornflowerblue;
@@ -445,7 +472,7 @@ span {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    border-radius: 20px 0px 0px 0px;
+    border-radius: 24px 0px 0px 0px;
   }
   .resume-name .name {
     -webkit-transform: rotatez(180deg);
@@ -453,17 +480,8 @@ span {
     height: 587px;
   }
   .resume-name .name .fs-6 {
-    border-right: 1px solid gray;
+    border-right: 1px solid #f6f6f6a2;
     padding: 0px 10px !important;
-  }
-
-  .company .unorder {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 
   .resume-jobs {
@@ -479,27 +497,29 @@ span {
             order: 4;
     color: white;
     background-color: black;
-    border-radius: 0px 0px 0px 20px;
+    border-radius: 0px 0px 0px 24px;
   }
-  .resume-contact a, .resume-contact span {
+  .resume-contact a, .resume-contact span, .resume-contact p {
     color: white;
   }
-
-  .resume-skill {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
-  }
-  .resume-skill .hobbies img {
-    width: 70px;
-    height: 70px;
-  }
-
-  .resume-social a span {
-    display: inline-block;
-    font-weight: 400;
+  .resume-contact svg path {
+    color: white;
   }
 }
+.resume-skill {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+.resume-skill .hobbies img {
+  width: 70px;
+  height: 70px;
+}
+
+.resume-social a span {
+  display: inline-block;
+}
+
 footer {
   width: 100%;
   min-height: 80px;
@@ -507,16 +527,24 @@ footer {
           backdrop-filter: blur(5px);
   background-color: #7e7e7e;
 }
+footer ali p {
+  background-color: turquoise;
+  color: #f6f6f6a2;
+}
 footer .btn-outline-primary {
   width: 40px;
   height: 40px;
-  padding: 5px;
+  padding: 4px;
   border: none;
-  border-radius: 6px;
-  color: #525252;
-  margin: 0px 10px;
+  border-radius: 8px;
+  margin: 0px 8px;
+}
+footer .btn-outline-primary svg path {
+  color: #f6f6f6a2;
 }
 footer .btn-outline-primary:hover {
-  background-color: #727272;
-  color: whitesmoke;
+  background-color: transparent;
+}
+footer .btn-outline-primary:hover svg path {
+  color: #4C4C6D;
 }
