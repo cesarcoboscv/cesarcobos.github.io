@@ -177,6 +177,9 @@ footer {
   line-height: 150%;
   color: #4C4C6D;
 }
+.article-entry .date {
+  font-weight: 500;
+}
 .article-entry .theme {
   font-family: "IBM Plex Mono", monospace;
 }
