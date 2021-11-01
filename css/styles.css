@@ -450,11 +450,20 @@ span {
   .resume-name .name {
     -webkit-transform: rotatez(180deg);
             transform: rotatez(180deg);
-    height: 550px;
+    height: 587px;
   }
   .resume-name .name .fs-6 {
     border-right: 1px solid gray;
     padding: 0px 10px !important;
+  }
+
+  .company .unorder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .resume-jobs {
@@ -480,6 +489,10 @@ span {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
+  }
+  .resume-skill .hobbies img {
+    width: 70px;
+    height: 70px;
   }
 
   .resume-social a span {
