@@ -236,6 +236,7 @@ header .navbar-brand img {
 .aboutme .aboutme-container .btn {
   letter-spacing: 1.2px;
   border-radius: 8px;
+  width: 120px;
 }
 .aboutme .aboutme-container .btn-secondary {
   color: #4C4C6D;
@@ -346,7 +347,7 @@ span {
   padding: 25px 0px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   * {
     font-size: 1.03em;
   }
@@ -402,9 +403,6 @@ span {
 .accordion-container .accordion-item .accordion-button:focus {
   -webkit-box-shadow: 0px 0px 3px rgba(73, 73, 73, 0.5);
           box-shadow: 0px 0px 3px rgba(73, 73, 73, 0.5);
-}
-.accordion-container accordion {
-  color: black;
 }
 
 .resume-section {
@@ -520,30 +518,30 @@ span {
   .resume-contact a, .resume-contact span, .resume-contact p {
     color: white;
   }
-  .resume-contact svg path {
+  .resume-contact a svg path, .resume-contact span svg path, .resume-contact p svg path {
     color: white;
   }
-}
-.resume-skill {
-  -webkit-box-ordinal-group: 6;
-      -ms-flex-order: 5;
-          order: 5;
-}
-.resume-skill .hobbies img {
-  width: 70px;
-  height: 70px;
-}
 
-.resume-social a span {
-  display: inline-block;
-}
+  .resume-skill {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .resume-skill .hobbies img {
+    width: 70px;
+    height: 70px;
+  }
 
+  .resume-social a .px-1 {
+    display: inline-block;
+  }
+}
 footer {
   width: 100%;
   min-height: 80px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  background-color: #7e7e7e;
+  background-color: cornflowerblue;
   color: #f6f6f6a2;
 }
 footer p {
