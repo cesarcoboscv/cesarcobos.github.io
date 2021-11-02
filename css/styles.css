@@ -163,7 +163,7 @@ header .navbar-brand img {
 }
 
 .blog {
-  height: calc(100vh - 150px);
+  height: auto;
 }
 
 .article-entry {
@@ -203,14 +203,28 @@ header .navbar-brand img {
   color: cornflowerblue;
   margin-left: 5px;
 }
-
-@media screen and (min-width: 992px) {
-  .article-entry {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.article-entry .btn-read:focus {
+  color: #4C4C6D;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
 }
+.article-entry .btn-read:active {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.modal {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.modal .modal-dialog .modal-content {
+  border-radius: 16px;
+}
+.modal .modal-dialog .modal-content .modal-body .body-content {
+  width: 90%;
+}
+
 .aboutme {
   width: 100%;
   height: auto;
