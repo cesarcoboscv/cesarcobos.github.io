@@ -82,14 +82,16 @@ html a {
   height: 80vh;
   width: 100vw;
 }
-.carousel-inner img {
+.carousel-inner video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   min-height: 80vh;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: saturate(200%);
-          filter: saturate(200%);
-  position: relative;
+  -webkit-filter: brightness(80%) contrast(120%);
+          filter: brightness(80%) contrast(120%);
 }
 
 .print {
@@ -120,6 +122,13 @@ html a {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .carousel-inner {
+    z-index: -1;
+    height: 80vh;
+    width: 100vw;
+  }
+}
 header {
   position: sticky;
   top: 0;
