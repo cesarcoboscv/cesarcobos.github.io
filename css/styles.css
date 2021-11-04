@@ -1,5 +1,5 @@
 .tooltip > .tooltip-inner {
-  background-color: #4C4C6D;
+  background-color: #008097;
   padding: 4px;
   font-style: italic;
   -webkit-box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.6);
@@ -13,7 +13,7 @@
   padding: 0;
   -webkit-box-sizing: 0;
           box-sizing: 0;
-  color: #4C4C6D;
+  color: #3a4c4e;
   font-family: "Spartan", sans-serif;
 }
 
@@ -179,7 +179,7 @@ header .navbar-brand img {
   border-radius: 24px;
   letter-spacing: 0.4px;
   line-height: 150%;
-  color: #4C4C6D;
+  color: #3a4c4e;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -202,18 +202,18 @@ header .navbar-brand img {
   border-radius: 24px;
 }
 .article-entry .btn-read {
-  color: #4C4C6D;
+  color: #3a4c4e;
   font-weight: 600;
 }
 .article-entry .btn-read:hover {
-  color: cornflowerblue;
+  color: #008097;
 }
 .article-entry .btn-read:hover .bi {
-  color: cornflowerblue;
+  color: #008097;
   margin-left: 5px;
 }
 .article-entry .btn-read:focus {
-  color: #4C4C6D;
+  color: #3a4c4e;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
@@ -248,8 +248,8 @@ header .navbar-brand img {
   width: 120px;
 }
 .aboutme .aboutme-container .btn-secondary {
-  color: #4C4C6D;
-  background-color: #4C4C6D;
+  color: #008097;
+  background-color: #008097;
 }
 .aboutme .aboutme-container .btn-secondary svg path {
   color: white;
@@ -259,27 +259,27 @@ header .navbar-brand img {
 }
 .aboutme .aboutme-container .btn-secondary:hover {
   background-color: transparent;
-  color: #4C4C6D;
-  border: 1px solid #4C4C6D;
+  color: #008097;
+  border: 1px solid #008097;
 }
 .aboutme .aboutme-container .btn-secondary:hover svg path {
-  color: #4C4C6D;
+  color: #008097;
 }
 .aboutme .aboutme-container .btn-secondary:hover span {
-  color: #4C4C6D;
+  color: #008097;
 }
 .aboutme .aboutme-container .btn-secondary:focus {
-  -webkit-box-shadow: 0px 0px 5px #4C4C6D;
-          box-shadow: 0px 0px 5px #4C4C6D;
+  -webkit-box-shadow: 0px 0px 5px #008097;
+          box-shadow: 0px 0px 5px #008097;
 }
 .aboutme .aboutme-container .btn-outline-secondary {
-  color: #4C4C6D;
-  border: 1px solid #4C4C6D;
+  color: #008097;
+  border: 1px solid #008097;
 }
 .aboutme .aboutme-container .btn-outline-secondary:hover {
   color: white;
-  background-color: #4C4C6D;
-  border: 1px solid #4C4C6D;
+  background-color: #008097;
+  border: 1px solid #008097;
 }
 .aboutme .aboutme-container .btn-outline-secondary:hover svg path {
   color: white;
@@ -288,8 +288,8 @@ header .navbar-brand img {
   color: white;
 }
 .aboutme .aboutme-container .btn-outline-secondary:focus {
-  -webkit-box-shadow: 0px 0px 5px #4C4C6D;
-          box-shadow: 0px 0px 5px #4C4C6D;
+  -webkit-box-shadow: 0px 0px 5px #008097;
+          box-shadow: 0px 0px 5px #008097;
 }
 
 span {
@@ -439,10 +439,10 @@ span {
 }
 
 .resume-contact a:hover, .resume-contact span:hover {
-  color: cornflowerblue;
+  color: #008097;
 }
 .resume-contact a:hover path, .resume-contact span:hover path {
-  color: cornflowerblue;
+  color: #008097;
 }
 .resume-contact svg {
   width: 25px;
@@ -454,7 +454,7 @@ span {
   display: none;
 }
 .social a:hover span, .social a:hover svg path {
-  color: cornflowerblue;
+  color: #008097;
 }
 
 .resume-certificates {
@@ -550,7 +550,7 @@ footer {
   min-height: 80px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  background-color: cornflowerblue;
+  background-color: #0098b3;
   color: #f6f6f6a2;
 }
 footer p {
@@ -571,5 +571,5 @@ footer .btn-outline-primary:hover {
   background-color: transparent;
 }
 footer .btn-outline-primary:hover svg path {
-  color: #4C4C6D;
+  color: #008097;
 }
