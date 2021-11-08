@@ -1,9 +1,6 @@
 .tooltip > .tooltip-inner {
-  background-color: #008097;
-  padding: 4px;
+  padding: 4px 8px;
   font-style: italic;
-  -webkit-box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.6);
-          box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.6);
   border-radius: 8px;
   opacity: 0.7;
 }
@@ -13,7 +10,7 @@
   padding: 0;
   -webkit-box-sizing: 0;
           box-sizing: 0;
-  color: #3a4c4e;
+  color: #2b4649;
   font-family: "Spartan", sans-serif;
 }
 
@@ -145,6 +142,9 @@ header .navbar {
   max-width: 1200px;
   font-weight: 500;
 }
+header .nav-item a:hover {
+  color: #5caab8 !important;
+}
 header .navbar-toggler {
   height: 40px;
   border-radius: 20px;
@@ -179,7 +179,7 @@ header .navbar-brand img {
   border-radius: 24px;
   letter-spacing: 0.4px;
   line-height: 150%;
-  color: #3a4c4e;
+  color: #2b4649;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -202,18 +202,18 @@ header .navbar-brand img {
   border-radius: 24px;
 }
 .article-entry .btn-read {
-  color: #3a4c4e;
+  color: #2b4649;
   font-weight: 600;
 }
 .article-entry .btn-read:hover {
-  color: #008097;
+  color: #408996;
 }
 .article-entry .btn-read:hover .bi {
-  color: #008097;
+  color: #408996;
   margin-left: 5px;
 }
 .article-entry .btn-read:focus {
-  color: #3a4c4e;
+  color: #2b4649;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
@@ -241,6 +241,8 @@ header .navbar-brand img {
 }
 .aboutme .aboutme-container {
   background-color: #f6f6f6a2;
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 99%, 100% 1%);
+          clip-path: polygon(0% 0%, 0% 100%, 100% 99%, 100% 1%);
 }
 .aboutme .aboutme-container .btn {
   letter-spacing: 1.2px;
@@ -248,8 +250,9 @@ header .navbar-brand img {
   width: 120px;
 }
 .aboutme .aboutme-container .btn-secondary {
-  color: #008097;
-  background-color: #008097;
+  color: #5caab8;
+  background-color: #5caab8;
+  border: #5caab8;
 }
 .aboutme .aboutme-container .btn-secondary svg path {
   color: white;
@@ -259,27 +262,33 @@ header .navbar-brand img {
 }
 .aboutme .aboutme-container .btn-secondary:hover {
   background-color: transparent;
-  color: #008097;
-  border: 1px solid #008097;
+  color: #5caab8;
+  border: 1px solid #5caab8;
 }
 .aboutme .aboutme-container .btn-secondary:hover svg path {
-  color: #008097;
+  color: #5caab8;
 }
 .aboutme .aboutme-container .btn-secondary:hover span {
-  color: #008097;
+  color: #5caab8;
 }
 .aboutme .aboutme-container .btn-secondary:focus {
-  -webkit-box-shadow: 0px 0px 5px #008097;
-          box-shadow: 0px 0px 5px #008097;
+  -webkit-box-shadow: 0px 0px 5px #5caab8;
+          box-shadow: 0px 0px 5px #5caab8;
 }
 .aboutme .aboutme-container .btn-outline-secondary {
-  color: #008097;
-  border: 1px solid #008097;
+  color: #5caab8;
+  border: 1px solid #5caab8;
+}
+.aboutme .aboutme-container .btn-outline-secondary span {
+  color: #5caab8;
+}
+.aboutme .aboutme-container .btn-outline-secondary svg path {
+  color: #5caab8;
 }
 .aboutme .aboutme-container .btn-outline-secondary:hover {
   color: white;
-  background-color: #008097;
-  border: 1px solid #008097;
+  background-color: #5caab8;
+  border: 1px solid #5caab8;
 }
 .aboutme .aboutme-container .btn-outline-secondary:hover svg path {
   color: white;
@@ -288,8 +297,8 @@ header .navbar-brand img {
   color: white;
 }
 .aboutme .aboutme-container .btn-outline-secondary:focus {
-  -webkit-box-shadow: 0px 0px 5px #008097;
-          box-shadow: 0px 0px 5px #008097;
+  -webkit-box-shadow: 0px 0px 5px #5caab8;
+          box-shadow: 0px 0px 5px #5caab8;
 }
 
 span {
@@ -439,10 +448,10 @@ span {
 }
 
 .resume-contact a:hover, .resume-contact span:hover {
-  color: #008097;
+  color: #408996;
 }
 .resume-contact a:hover path, .resume-contact span:hover path {
-  color: #008097;
+  color: #408996;
 }
 .resume-contact svg {
   width: 25px;
@@ -454,7 +463,7 @@ span {
   display: none;
 }
 .social a:hover span, .social a:hover svg path {
-  color: #008097;
+  color: #408996;
 }
 
 .resume-certificates {
@@ -550,7 +559,7 @@ footer {
   min-height: 80px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  background-color: #0098b3;
+  background-color: #5caab8;
   color: #f6f6f6a2;
 }
 footer p {
@@ -571,5 +580,5 @@ footer .btn-outline-primary:hover {
   background-color: transparent;
 }
 footer .btn-outline-primary:hover svg path {
-  color: #008097;
+  color: #408996;
 }
