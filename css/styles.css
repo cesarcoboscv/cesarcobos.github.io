@@ -145,8 +145,14 @@ header .navbar {
   max-width: 1200px;
   font-weight: 500;
 }
+header .nav-item a {
+  -webkit-transition: 4s;
+  transition: 4s;
+}
 header .nav-item a:hover {
   color: #144f80 !important;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 header .navbar-toggler {
   height: 40px;
@@ -251,6 +257,8 @@ header .navbar-brand img {
   color: #144f80;
   background-color: #144f80;
   border: #144f80;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 .aboutme .aboutme-container .btn-secondary svg path {
   color: white;
@@ -261,6 +269,8 @@ header .navbar-brand img {
 .aboutme .aboutme-container .btn-secondary:hover {
   background-color: transparent;
   color: #144f80;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
   border: 1px solid #144f80;
 }
 .aboutme .aboutme-container .btn-secondary:hover svg path {
@@ -276,6 +286,8 @@ header .navbar-brand img {
 .aboutme .aboutme-container .btn-outline-secondary {
   color: #144f80;
   border: 1px solid #144f80;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 .aboutme .aboutme-container .btn-outline-secondary span {
   color: #144f80;
@@ -287,6 +299,8 @@ header .navbar-brand img {
   color: white;
   background-color: #144f80;
   border: 1px solid #144f80;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 .aboutme .aboutme-container .btn-outline-secondary:hover svg path {
   color: white;
