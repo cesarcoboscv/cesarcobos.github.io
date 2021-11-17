@@ -6,6 +6,7 @@
 *.config
 *.scss
 *.pug
+*.xd
 /components
 /css/components
 /assets/img
