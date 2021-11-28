@@ -568,7 +568,7 @@ footer {
   min-height: 80px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  background-color: tranparent;
+  background-color: transparent;
 }
 footer p {
   color: #2b4649;
@@ -589,4 +589,12 @@ footer .btn-outline-primary:hover {
 }
 footer .btn-outline-primary:hover svg path {
   color: #144f80;
+}
+
+.error-section {
+  height: 70vh;
+}
+.error-section .errorerror {
+  -webkit-transform: scale(-1);
+          transform: scale(-1);
 }
