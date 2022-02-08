@@ -133,7 +133,7 @@ body {
 header {
   position: sticky;
   top: 0;
-  background-color: #f6f6f6a2;
+  background-color: #f6f6f6fb;
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
   z-index: 2;

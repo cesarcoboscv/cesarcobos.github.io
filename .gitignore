@@ -4,8 +4,6 @@
 *png
 *.json
 *.config
-*.scss
-*.pug
 *.xd
 /components
 /css/components
