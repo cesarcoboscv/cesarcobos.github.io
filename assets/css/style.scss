@@ -54,6 +54,9 @@
 .margin-x-16{
     margin: 0 16px;
 }
+.margin-top-48{
+    margin-top: 48px;
+}
 .padding-x-32{
     padding: 0 32px;
 }
@@ -151,7 +154,7 @@
   /* Position and style the close button (top right corner) */
   .side-nav .closebtn {
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     left: -50px;
     font-size: 3rem;
     margin-left: 50px;
