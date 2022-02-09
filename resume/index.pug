@@ -1,0 +1,258 @@
+include ../components/_mixins.pug
+- var page_title = "Resume"
+<!DOCTYPE html>
+<html lang="en">
+	head
+		include ../components/_head.pug
+	body
+		include ../components/_header.pug
+	<main>
+		div#particles-js
+		<section class="resume-section d-flex justify-content-center py-5">
+			<p class="mobile-mode small">You are watching in mobile mode</p>
+			<div class="row bg-white sheet small">
+				<div class="resume-name col-12 col-lg-3 p-5">
+					<div class="name text-end">
+						<div class="fs-1 text-light fw-bold">César Valentín Cobos Clemente
+							<div class="fs-6 fw-lighter pt-3 text-light">Civil Engineer / Project Manager / Frontend Dev</div>
+						</div>
+					</div>
+				</div>
+			<div class="resume-contact col-12 col-lg-3 d-flex align-items-end py-4 ps-4">
+				<div class="col">
+					<p class="fw-bolder mb-4 border-bottom">Contact</p>
+					<p class="resume-mail"><a href="mailto:me@cesar-cobos.com" data-bs-toggle="tooltip" data-bs-placement="right" title="Mail me">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+</svg><span class="fw-light">me@cesar-cobos.com</span></a></p>
+				<P class="resume-website"> <a href="http://cesar-cobos.com" rel="noreferrer" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" title="My Website"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
+<path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+</svg><span class="fw-light">cesar-cobos.com</span></a></P>
+				<p class="location"><a href="https://www.google.com.mx/maps/place/Puebla,+Pue./@19.0401963,-98.2630061,12z/data=!3m1!4b1!4m5!3m4!1s0x85cfc0bd5ebc7a3b:0x48a6461de494ad95!8m2!3d19.0414398!4d-98.2062727" rel="noreferrer" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" title="I'm over here">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+<path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg><span class="fw-light">Puebla, Mx</span></a></p>
+			</div>
+			</div>
+			<div class="resume-jobs col-12 col-lg-9 p-5">
+				<div class="fs-4 fw-bolder py-3">About me</div>
+				<p class="px-1 small">I'm Civil Engineer with more than 5 years' experience in Design, Project Management for Industrial Sector and Automotive. My goal is to colaborate in a new and different sectors as Frontend Develop and Data Science, since I've taken my carrer by a new path to be able to acquire the necesary skills to get in</p>
+				<div class="fs-4 fw-bolder py-3">Experience</div>
+				<div class="company px-1 pt-4">
+					<div class="company-name lh-1 d-flex justify-content-between fs-6">
+						<p class="fw-bold lh-1">Zara Filtración Intergral</p><span class="small fw-normal lh-1 pe-3">2017 - Present</span>
+				</div>
+				<p class="lh-1">Mechanical Designer | Project Manager
+					<p class="lh-1 pt-2 fst-italic"></p>
+					<div class="col-12 row fst-italic small d-flex justify-content-center">
+						<div class="col-12 col-lg-4">- Mechanical Design</div>
+						<div class="col-12 col-lg-4">- Metallic Structures</div>
+						<div class="col-12 col-lg-4">- Project Management</div>
+						<div class="col-12 col-lg-4">- Indoor Surveys</div>
+						<div class="col-12 col-lg-4"></div>
+						<div class="col-12 col-lg-4"></div>
+					</div>
+					</p>
+				</div>
+			<div class="company px-1 pt-4">
+				<div class="company-name lh-1 d-flex justify-content-between fs-6">
+				<p class="fw-bold lh-1">STIAN</p><span class="small fw-normal lh-1 pe-3">2015 - 2017</span>
+			</div>
+				<p class="lh-1">Topograph | Drone
+					<p class="lh-1 pt-2 fst-italic"></p>
+					<div class="col-12 row fst-italic small d-flex justify-content-center">
+						<div class="col-12 col-lg-4">- Drone</div>
+						<div class="col-12 col-lg-4">- Topographic Surveys</div>
+						<div class="col-12 col-lg-4">- Geodesic Surveys</div>
+						<div class="col-12 col-lg-4">- Image processing</div>
+						<div class="col-12 col-lg-4"></div>
+						<div class="col-12 col-lg-4"></div>
+					</div>
+				</p>
+			</div>
+			<div class="company px-1 pt-4">
+				<div class="company-name lh-1 d-flex justify-content-between fs-6">
+					<p class="fw-bold lh-1">Yplison Ingeniería</p><span class="small fw-normal lh-1 pe-3">2014</span>
+				</div>
+				<p class="lh-1">Drafter
+					<p class="lh-1 pt-2 fst-italic"></p>
+					<div class="col-12 row fst-italic small d-flex justify-content-center">
+						<div class="col-12 col-lg-4">Metallic Structures Blueprints</div>
+						<div class="col-12 col-lg-4"></div>
+						<div class="col-12 col-lg-4"></div>
+						<div class="col-12 col-lg-4"></div>
+						<div class="col-12 col-lg-4"></div>
+						<div class="col-12 col-lg-4"></div>
+					</div>
+				</p>
+			</div>
+			<div class="company px-1 pt-4">
+				<div class="company-name lh-1 d-flex justify-content-between fs-6">
+					<p class="fw-bold lh-1"></p><span class="small fw-normal lh-1 pe-3"></span>
+			</div>
+			<p class="lh-1">
+				<p class="lh-1 pt-2 fst-italic"></p>
+				<div class="col-12 row fst-italic small d-flex justify-content-center">
+					<div class="col-12 col-lg-4"></div>
+					<div class="col-12 col-lg-4"></div>
+					<div class="col-12 col-lg-4"></div>
+					<div class="col-12 col-lg-4"></div>
+					<div class="col-12 col-lg-4"></div>
+					<div class="col-12 col-lg-4"></div>
+				</div>
+			</p>
+			</div>
+			<div class="fs-4 fw-bolder">Education</div>
+			<p class="ps-1 fw-bolder lh-2 pt-2">Instituto Tecnológico de Cerro Azul <span class="small lighter">(Tecnológico Nacional campus Cerro Azul)</span></p>
+			<div class="small justify-content-between d-flex pe-3 ps-2 fw-normal fst-italic lh-1">
+				<p>Civil Engineer</p>
+				<p>2008 - 2013</p>
+			</div>
+			<div class="resume-certificates fw-bolder">Certificates
+				<div class="col-12 fs-6 fw-normal pt-2">
+					<div class="certified d-flex justify-content-between pe-3 ps-1 small pb-2">
+						<div class="names"><span></span><a class="fw-normal py-2 lh-1" href="https://platzi.com/p/CesarCobos/curso/1557-git-github/diploma/detalle/" rel="noreferrer" target="_blank">Git &amp; GitHub</a><a class="fw-normal py-2 lh-1" href="#" rel="noreferrer" target="_blank"></a></div><span class="fw-normal fst-italic">2021</span>
+				</div>
+				<div class="certified d-flex justify-content-between pe-3 ps-1 small pb-2">
+					<div class="names"><span></span><a class="fw-normal py-2 lh-1" href="https://platzi.com/p/CesarCobos/curso/2008-html-css/diploma/detalle/" rel="noreferrer" target="_blank">HTML &amp; CSS</a><a class="fw-normal py-2 lh-1" href="#" rel="noreferrer" target="_blank"></a></div><span class="fw-normal fst-italic">2021</span>
+				</div>
+				<div class="certified d-flex justify-content-between pe-3 ps-1 small pb-2">
+					<div class="names"><span></span><a class="fw-normal py-2 lh-1" href="https://platzi.com/p/CesarCobos/curso/1814-basico-javascript/diploma/detalle/" rel="noreferrer" target="_blank">Basic JavaScript</a><a class="fw-normal py-2 lh-1" href="#" rel="noreferrer" target="_blank"></a></div><span class="fw-normal fst-italic">2021</span>
+				</div>
+				<div class="certified d-flex justify-content-between pe-3 ps-1 small pb-2">
+					<div class="names"><span></span><a class="fw-normal py-2 lh-1" href="https://platzi.com/p/CesarCobos/curso/1936-lenguaje-c/diploma/detalle/" rel="noreferrer" target="_blank">C,</a><a class="fw-normal py-2 lh-1" href="https://platzi.com/p/CesarCobos/curso/2372-c-plus-plus/diploma/detalle/" rel="noreferrer" target="_blank">C++</a></div><span class="fw-normal fst-italic">2021</span>
+				</div>
+				<div class="certified d-flex justify-content-between pe-3 ps-1 small pb-2">
+					<div class="names"><span></span><a class="fw-normal py-2 lh-1" href="https://platzi.com/p/CesarCobos/curso/2397-python-profesional/diploma/detalle/" rel="noreferrer" target="_blank">Python Intermediate</a><a class="fw-normal py-2 lh-1" href="#" rel="noreferrer" target="_blank"></a></div><span class="fw-normal fst-italic">2021</span>
+				</div>
+				<div class="certified d-flex justify-content-between pe-3 ps-1 small pb-2">
+					<div class="names"><span>Frontend Frameworks: </span><a class="fw-normal py-2 lh-1" href="https://platzi.com/p/CesarCobos/curso/1331-bootstrap/diploma/detalle/" rel="noreferrer" target="_blank">Bootstrap &amp;</a><a class="fw-normal py-2 lh-1" href="https://platzi.com/p/CesarCobos/curso/1822-tailwind-css/diploma/detalle/" rel="noreferrer" target="_blank">Tailwind</a></div><span class="fw-normal fst-italic">2021</span>
+				</div>
+				<div class="certified d-flex justify-content-between pe-3 ps-1 small pb-2">
+					<div class="names"><span></span><a class="fw-normal py-2 lh-1" href="https://platzi.com/p/CesarCobos/curso/1974-proyectos-pmbok/diploma/detalle/" rel="noreferrer" target="_blank">Project Management</a><a class="fw-normal py-2 lh-1" href="#" rel="noreferrer" target="_blank"></a></div><span class="fw-normal fst-italic">2021</span>
+				</div>
+				<div class="certified d-flex justify-content-between pe-3 ps-1 small pb-2">
+					<div class="names"><span></span><a class="fw-normal py-2 lh-1" href="https://platzi.com/p/CesarCobos/curso/1666-contenido/diploma/detalle/" rel="noreferrer" target="_blank">Content Marketing</a><a class="fw-normal py-2 lh-1" href="#" rel="noreferrer" target="_blank"></a></div><span class="fw-normal fst-italic">2021</span>
+				</div>
+				<div class="certified d-flex justify-content-between pe-3 ps-1 small pb-2">
+					<div class="names"><span></span><a class="fw-normal py-2 lh-1" href="https://platzi.com/p/CesarCobos/curso/1622-seo/diploma/detalle/" rel="noreferrer" target="_blank">Search Engine Optimization</a><a class="fw-normal py-2 lh-1" href="#" rel="noreferrer" target="_blank"></a></div><span class="fw-normal fst-italic">2021</span>
+				</div>
+				<div class="certified d-flex justify-content-between pe-3 ps-1 small pb-2">
+					<div class="names"><span></span><a class="fw-normal py-2 lh-1" href="https://platzi.com/p/CesarCobos/curso/1594-copy-storytelling/diploma/detalle/" rel="noreferrer" target="_blank">Copywritting</a><a class="fw-normal py-2 lh-1" href="#" rel="noreferrer" target="_blank"></a></div><span class="fw-normal fst-italic">2021</span>
+				</div>
+			</div>
+			</div>
+			<div class="resume-certificates fw-bolder pt-3">Achievements
+				<div class="col-12 fs-6 fw-normal pt-2"> 
+					<div class="certified d-flex justify-content-between pe-3 ps-1 small pb-2">
+						<div class="names"><span>TaeKwonDo Black Belt 1° Dan</span><a class="fw-normal py-2 lh-1" href="#" rel="noreferrer" target="_blank"></a><a class="fw-normal py-2 lh-1" href="" rel="noreferrer" target="_blank"></a></div><span class="fw-normal fst-italic">2021</span>
+					</div>
+				<div class="certified d-flex justify-content-between pe-3 ps-1 small pb-2">
+					<div class="names"><span></span><a class="fw-normal py-2 lh-1" href="https://platzi.com/p/CesarCobos/ruta/46-habilidades-blandas/diploma/detalle/" rel="noreferrer" target="_blank">Soft Skills Path</a><a class="fw-normal py-2 lh-1" href="#" rel="noreferrer" target="_blank"></a></div><span class="fw-normal fst-italic">2021</span>
+				</div>
+				</div>
+				</div>
+				</div>
+			<div class="resume-skill col-12 col-lg-9 p-5 row">
+			<div class="fs-4 fw-bolder pb-3">Skills</div>
+			<div class="col-12 d-flex justify-content-center py-3 row">
+				<p class="ps-4">Languages</p>
+				<div class="skill col-6 col-md-4 col-lg-3 d-flex align-items-center flex-column justify-content-center py-3 text-center"><img src="https://bl3302files.storage.live.com/y4ms7YkB4pPqI8z0bBLSoqKmD_2025SuHTdbj-bc4dirPdVAuwiUjgEOJAGrubClhzLzEHP1L70NNcPq2u8HWemNn0hJNQtPW-xm03QVxL3bu5UD9XQgHkW13GXu25Ft4NgwXOXhuke6gNxZxcNtdPISCyjFwCO7ZAn16Xec8TIvXq0_yUkBq6KGuTWubpjfeyS?width=48&amp;height=48&amp;cropmode=none" alt="Python Icon">
+					<p class="small pt-2">Python</p>
+				</div>
+				<div class="skill col-6 col-md-4 col-lg-3 d-flex align-items-center flex-column justify-content-center py-3 text-center"><img src="https://bl3302files.storage.live.com/y4mrYNGEEyz0J71oj05vkf-A7QAiUOs1tC8BrvFgilj5sCnvykpe3brra5u-z666vxWeo08XtRw_8nniqW-I6MClc1tqIg9tRTX2WnZuoKExwkkgQTTOM-Q3h-ZGWNgXtY6w7xSjBzi4Z-mnn8thR55Rr1jT_fVOHHo9Uwv0m-2e37KZ5qrkbiwIyoOOd7g691a?width=48&amp;height=48&amp;cropmode=none" alt="HTML Icon">
+					<p class="small pt-2">HTML</p>
+				</div>
+				<div class="skill col-6 col-md-4 col-lg-3 d-flex align-items-center flex-column justify-content-center py-3 text-center"><img src="https://bl3302files.storage.live.com/y4mtsCCdRPXiVYdVqCks1iwsqL597cbpIp1_Ze7VwVdkTg0xiuscTBiWgp_CVKxxMh9Ufawwp9J62AkfDMzBqChdcsArU9hJnnSN8Nhp8Gtanx40mqVZ3d8IcBSgBxLyg-xG_OKV5mQAN74E9R9iLKMESXOQweiFAQaFrYpgqA1Rjk6qiKEm43YIvQC-60RsTBL?width=48&amp;height=48&amp;cropmode=none" alt="CSS Icon">
+					<p class="small pt-2">CSS</p>
+				</div>
+				<div class="skill col-6 col-md-4 col-lg-3 d-flex align-items-center flex-column justify-content-center py-3 text-center"><img src="https://bl3302files.storage.live.com/y4mHT-9XAcpp5xUCkmcQ8J7mMRsdZ_5zN2QJUaSqAeVhWt19iTQ5T-8meaAmFCsdp-UvujSRJeqVBPLgBF_SnK2t5BFqNWFjtFFxf7RJ3_mABa8pMwvHQTYIY0tg06ZDCYt71ndZ9lPADt06b6IWqJYcPAq6u44IDyQTnyBl-2Xr9kshGaUWvlHdrhYnlZMUXfj?width=48&amp;height=48&amp;cropmode=none" alt="C Icon">
+					<p class="small pt-2">C</p>
+				</div>
+				<p class="ps-4">Tools</p>
+				<div class="skill col-6 col-md-4 col-lg-3 d-flex align-items-center flex-column justify-content-center py-3 text-center"><img src="https://bl3302files.storage.live.com/y4mtF6Lq1dMw8fuamC1vGZzdSjZLhdI11VvDpgoZ6VPlS0CwcuWBGB32rdsEwdLLwsfJVGZwoaSnISRpvAsEw3BE3iwBykT1ohR4qCrVveqcfH7tKOzVMF9JP4A2sFFaLROL96XbL9HmIyea3iQ2f9cZ_BbT5VM5s6KEI0M3PQj7KrRW3lpOut1MaDdumaX0-pf?width=48&amp;height=48&amp;cropmode=none" alt="Colab Icon">
+					<p class="small pt-2">Google Colab</p>
+				</div>
+				<div class="skill col-6 col-md-4 col-lg-3 d-flex align-items-center flex-column justify-content-center py-3 text-center"><img src="https://bl3302files.storage.live.com/y4mmvgaHMZhjWpQo0s5waCJOI_SJ55VKEm3n1YKRvoHddaCjw8256CH9UpJPVmMp8URXO7MucAhMBGqiz4pMqP_jXatZN-P6Ymlqv7P10Ube1vitiZPNyNb0iM4wmCqyXTHDZBd-pip_QAi0lhDofo6d-yQNGWidaFFhq8bd7OX1IFcVYa3vF6hS3bCbtpdTXCe?width=48&amp;height=48&amp;cropmode=none" alt="DEepnote Icon">
+					<p class="small pt-2">Deepnote</p>
+				</div>
+				<div class="skill col-6 col-md-4 col-lg-3 d-flex align-items-center flex-column justify-content-center py-3 text-center"><img src="https://bl3302files.storage.live.com/y4m0WOhEuuYtQ_Kpj9RsIdOVbqvG0C-8PRi5U67ABCgCCDpqB1NDpXn8m6UQiR_sPRTGX0iI1WNOQvkk9NUP_-pPXzPpYeAZ5PKGZ4_nX6j_wgGf3_XBtYn8hqJHDWyazzoJo8mZ11jaBxz0D2yE3A8q3qchvhBom7HbHZxJBuT3L56zJPLkJH8JPUaMcW3KAwQ?width=48&amp;height=48&amp;cropmode=none" alt="Sass Icon">
+					<p class="small pt-2">Sass</p>
+				</div>
+				<div class="skill col-6 col-md-4 col-lg-3 d-flex align-items-center flex-column justify-content-center py-3 text-center"><img src="https://bl3302files.storage.live.com/y4mtInGy6wE_XoXEg8SbIfdO-CQok0QHLEQcUsuRBhzp4WYdVm5Z7e6THJKg6SxQf9NkKX4npcq8IQ7eoutkZ_YjjbTK-HYuVianER6XwFTKgLlhRynuK7hkg40wtDxeRzTYLKcBUHzB7ziMIk5apXxdFf4f4qZaSGefRfgcpdehvGrMWZCwZoa-T99e3u1jb_8?width=48&amp;height=48&amp;cropmode=none" alt="VS Code Icon">
+					<p class="small pt-2">VS Code</p>
+				</div>
+				<div class="skill col-6 col-md-4 col-lg-3 d-flex align-items-center flex-column justify-content-center py-3 text-center"><img src="https://bl3302files.storage.live.com/y4mcq4PSd9z9xoWdHwNKB86fUDAVrJB4dgwpZOCDEtpt31nKMObCF0RINfCejq1bkU4QevaH4kltiagu8AaAldKql7-YcZmuPcs0HoP46pP551fad_UX8fO8otDK6dHiOA8WwR9-4BYHJBaLeOxfo9-3k2KLQe4fLB_palYEMSnKQVbtnF0i03KUarJarEXNa0R?width=48&amp;height=48&amp;cropmode=none" alt="Bootstrap Icon">
+					<p class="small pt-2">Bootstrap</p>
+				</div>
+				<div class="skill col-6 col-md-4 col-lg-3 d-flex align-items-center flex-column justify-content-center py-3 text-center"><img src="https://bl3302files.storage.live.com/y4mSPFn7frbRwp4lFNqNBwuYAKpLUQnuv6s5k-qK4izH6UmoPtjQ5rst8VJDaDAH9CpkQABAbUfnNMhbNPnUTQdnnws6HoGH90izSLFF38dQvQHnXCiWE3VrvaPMzj-rWbg-cnOBJI3q1AuN7yNgfO3SeSqXgX7xY7f9K68aQLLClFUXRxGC6df13u3QC5dvUCV?width=48&amp;height=48&amp;cropmode=none" alt="Tailwind Icon">
+					<p class="small pt-2">Tailwind</p>
+				</div>
+			</div>
+			<div class="fs-4 fw-bolder">Hobbies</div>
+			<div class="hobbies col-12 d-flex justify-content-center py-5 row">
+				<div class="col-6 col-md-4 col-lg-3 hobby d-flex flex-column px-4 py-3 align-items-center text-center"><img src="https://bl3302files.storage.live.com/y4mlExeNYjXtvM4W_cn7r-qZ0yTdnvB7SD2GpfGHEozb8QU8MPh1MoMvZO-6muvm-VQIN4I2lnDfIQ3pBCZG5IyHeyCHQSyPU0z5HAe4suVNt3S4iyhqaGSTDNzGjHVeNC2zE9gHfjV-lvNzh2rihu88WWY957uGfxc9C_6QkWe9EVYwrV8WxzYNa_JF9U18BrA?width=64&amp;height=64&amp;cropmode=none" alt="Tae Kwon Do">
+					<p class="pt-1 small pt-2">Tae kwon Do</p>
+				</div>
+				<div class="col-6 col-md-4 col-lg-3 hobby d-flex flex-column px-4 py-3 align-items-center text-center"><img src="https://bl3302files.storage.live.com/y4m9gLF88e5U0ohpCC0-BrU2BiSc6xOQwpYzWyscZe-_4_fE95T-XMWZufn6-OcUytu1HqIbjAZ8bpQ4hJLSn427uMfkwqBSvmF_7tY1w7mCslSVhLWOKqgp2UFvUlErO6PCkzZXeAtiVIlXW0zcEtpBu_SeQtDgVv5ztcuv38TS7EjrQ_nsM5jzExL1rF3-LjT?width=64&amp;height=64&amp;cropmode=none" alt="Guitar">
+					<p class="pt-1 small pt-2">Guitar</p>
+				</div>
+				<div class="col-6 col-md-4 col-lg-3 hobby d-flex flex-column px-4 py-3 align-items-center text-center"><img src="https://bl3302files.storage.live.com/y4mwA78D-rGihM5_y51TKIxkFSkFoy4XFN3fynphhy6UTPHfWuoCanOhO9Ynbb57hBoGWsz_CKKEVA3apvuCEh-3YlPj8Gsfj3hSkUCnRx29LwU_fAnSLcg1ne6JL7rrMA9BcvNvBPeUNrU4CMshkG7qGeG3hgaX-b2VzPbEpdIZy2o8UlyCxwmEUSGE0094oue?width=64&amp;height=64&amp;cropmode=none" alt="Learn">
+					<p class="pt-1 small pt-2">Continuos Learning</p>
+				</div>
+				<div class="col-6 col-md-4 col-lg-3 hobby d-flex flex-column px-4 py-3 align-items-center text-center"><img src="https://bl3302files.storage.live.com/y4mMxDsWadrfk11XVqneb7FM5wzZEEvQ1Ykkp21MaAkuQQaCmDA5YJYbqYrSX12kbhdMLpvGKqpdFFLJ6YOzfINLjyVR_JMchhuOtj_eyzigVtsjXMV0i7bK-11n2Dflc7Ob7cqdlCI5frGv2iPSVUOkU7ZAM40iDOTELhOZMeLLNMbp8ERhkxxbDBZzuLdh2jd?width=64&amp;height=64&amp;cropmode=none" alt="Music">
+					<p class="pt-1 small pt-2">Music</p>
+				</div>
+				<div class="col-6 col-md-4 col-lg-3 hobby d-flex flex-column px-4 py-3 align-items-center text-center"><img src="https://bl3302files.storage.live.com/y4mByTXdL2QG8umZNWzxY1TFBa0NmcsHt8yR23EPW_ADyWwwxaSc6zAIsY2PdVkutVntcJPq8kGobu2i-CQLCY3zwmzvXZTOj_-J_s5m_ViglnFtk0OqbmndP6975ukUZ3ina-NA7F7DZZPX4xVOD26Z04MpuMoFqDWbj7MZQLDfvg6zyMgBSwDa-VOg_jKMzgs?width=64&amp;height=64&amp;cropmode=none" alt="Read">
+					<p class="pt-1 small pt-2">Read</p>
+				</div>
+			</div>
+			<div class="col-12 d-flex justify-content-center resume-social py-5">
+				<div class="social social-linkedin"><a href="https://www.linkedin.com/in/cesarcoboscv/" rel="noreferrer" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="See my profile in LinkedIn">
+					<svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+</svg><span class="px-1 fw-normal">/in/cesarcoboscv</span></a></div>
+			<div class="social social-twitter px-5"><a href="https://twitter.com/CesarcobosCV" rel="noreferrer" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Let's get in touch in Twitter"><svg xmlns="http://www.w3.org/2000/svg" " fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+</svg><span class="px-1 fw-normal">@cesarcoboscv</span></a></div>
+			<div class="social social-github"> <a href="https://github.com/CesarCobos" rel="noreferrer" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="See my projects on Github">
+				<svg xmlns="http://www.w3.org/2000/svg" " fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+</svg><span class="px-1 fw-normal">cesarcobos</span></a></div>
+</div>
+		</div>
+		</div>
+		</section>
+		</main>
+		<footer class="d-flex align-items-center justify-content-center">
+		<section class="container-fluid d-flex justify-content-center small">
+			<div class="col row row-social d-flex align-items-center justify-content-center border-top">
+				<div class="col-12 col-md-2 d-flex align-items-center justify-content-center small pt-3">
+					<p>© 202? César Cobos</p>
+				</div>
+			<div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center small pt-3">
+				<p class="px-2">Let's get in touch </p>
+			</div>
+			<div class="col-12 col-md-2 d-flex justify-content-center align-items-center"><a href="http://linkedin.com/in/cesarcoboscv" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" title="See my profile on LinkedIn">
+				<button type="button" aria-label="social-button"  class="btn btn-outline-primary">
+<svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+</svg>
+</button></a><a href="http://twitter.com/cesarcoboscv" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" title="See you in Twitter">
+				<button type="button" aria-label="social-button" class="btn btn-outline-primary">
+<svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+</svg>
+</button></a><a href="http://github.com/cesarcobos" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" title="See what i'm doing in GitHub">
+				<button type="button" aria-label="social-button" class="btn btn-outline-primary">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+</svg>
+</button></a></div>
+		</div>
+		</section>
+		</footer>
+		include ../components/_scripts.pug
+		</body>
+</html>

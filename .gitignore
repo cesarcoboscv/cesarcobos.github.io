@@ -1,11 +1,7 @@
 *.svg
 *.jpg
 *.jpeg
-*png
+*.png
 *.json
 *.config
 *.xd
-/components
-/css/components
-/assets/img
-/assets/icons
