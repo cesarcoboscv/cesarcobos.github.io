@@ -1,9 +1,17 @@
-.nav-bar.display-flex.place-center.transition-5s.width-100vw
-    .nav-container.display-inherit.justify-between.width-100vw.height-64.items-center.padding-x-32.max-width-1300
+.nav-bar(class= "display-flex"
+        class="width-100vw"
+        class="place-center"
+        class="transitio-5s")
+    .nav-container(class="display-inherit"
+                    class="justify-between items-center"
+                    class="width-100vw height-64 max-width-1300"
+                    class="padding-x-32")
         .nav-container-left
-            span Cesar Cobos
-        .nav-container-right.display-inherit
-            .menu-items.display-none
+            .menu-items.side-nav#sideNav(class="transition-5s")
                 +menuBar()
+            span(onClick="openNav()" class="transition-5s")
             .nav-small_menu
+        .nav-container-right(class="display-inherit padding-x-32")
+            span Cesar Cobos
+            
         

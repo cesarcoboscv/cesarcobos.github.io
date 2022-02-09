@@ -1,10 +1,11 @@
 mixin menuItem(link,name,class_1,class_2,class_3,tooltip)
-    a.margin-x-16.dark-text(href=link rel="noreferrer" class=class_1 class=class_2 class=class_3)=name
+    a.dark-text.transition-5s.accent-hover(href=link rel="noreferrer" class=class_1 class=class_2 class=class_3)=name
         .span=tooltip
 
 mixin menuBar()
-    +menuItem("../#hero","Home")
-    +menuItem("../#aboutme","About_me")
-    +menuItem("../projects/","Projects")
-    +menuItem("../resume/","Resume")
-    +menuItem("../blog/","Blog")
+    <a href="javascript:void(0)" class="closebtn accent-hover" onClick="closeNav()">&times;</a>
+    +menuItem("../#hero","Home","translate-hover-x-16")
+    +menuItem("../#aboutme","About_me","translate-hover-x-16")
+    +menuItem("../projects/","Projects","translate-hover-x-16")
+    +menuItem("../resume/","Resume","translate-hover-x-16")
+    +menuItem("../blog/","Blog","translate-hover-x-16")
