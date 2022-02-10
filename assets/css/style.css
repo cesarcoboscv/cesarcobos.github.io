@@ -5,6 +5,8 @@
   --shadow-text-color:gray;
   --light-text-color:white;
   --accent-color:#DEFF8B;
+  --accent-color-second:#9365DB;
+  --accent-color-third: #FF5151;
 }
 
 * {
@@ -44,6 +46,10 @@
 
 .height-64 {
   height: 64px;
+}
+
+.width-64 {
+  width: 64px;
 }
 
 .height-100vh {
@@ -147,12 +153,24 @@
   font-size: 3rem;
 }
 
+.text-size-15 {
+  font-size: 1.5rem;
+}
+
 .text-size-18 {
   font-size: 1.8rem;
 }
 
-.text-bold {
+.font-bold {
   font-weight: 600;
+}
+
+.font-thin {
+  font-weight: 200;
+}
+
+.font-mono {
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .background-light {
@@ -167,30 +185,38 @@
   color: var(--accent-color);
 }
 
+.accent-color-second {
+  color: var(--accent-color-second);
+}
+
+.accent-color-third {
+  color: var(--accent-color-third);
+}
+
 .shadow-color {
   color: var(--shadow-text-color);
 }
 
+#particles-js {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
 .typing-container {
-  height: 30px;
   margin: 96px 0 128px 0;
 }
 
 .side-nav {
   width: 0;
   left: 0;
-  padding-top: 60px;
-  background-color: rgba(0, 0, 0, 0.9);
+  padding-top: 64px;
 }
 
 .side-nav a {
   padding: 16px 48px;
 }
 
-.menu-icon {
-  width: 50px;
-  height: 50px;
-}
 .menu-icon .random {
   display: none;
 }
@@ -202,15 +228,20 @@
 }
 
 .closebtn {
-  bottom: 50px;
-  left: -50px;
-  margin-left: 50px;
+  bottom: 48px;
 }
 
-#particles-js {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
+.hero-content {
+  margin-left: 16vw;
+}
+
+.hero-content {
+  width: 80vw;
+  letter-spacing: 2px;
+}
+
+.print {
+  margin-top: 48px;
 }
 
 @media screen and (max-height: 450px) {
@@ -240,6 +271,6 @@
 
   .closebtn {
     top: 0;
-    left: 170px;
+    left: 180px;
   }
 }

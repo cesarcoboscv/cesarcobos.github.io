@@ -29,53 +29,7 @@ html a {
   height: 75px;
 }
 
-.section-title {
-  font-family: "IBM Plex Mono", monospace;
-}
-.section-title p {
-  color: #9365DB;
-}
-.section-title .comma {
-  color: #FF5151;
-}
 
-.hero {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-
-}
-
-.hero-content {
-  width: 100%;
-  height: 100vh;
-  letter-spacing: 0.8px;
-  padding-bottom: 100px;
-  
-}
-.hero-content .print-hello {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 1.3rem;;
-}
-.hero-content {
-  letter-spacing: 2px;
-  font-size: 1.5rem !important;
-
-}
-
-
-.print {
-  color: #DEFF8B;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 1.1rem;
-  margin-top: 50px;
-}
-.print .bracket {
-  color: white;
-}
-.print .comma {
-  color: #FF5151;
-}
 
 .blog {
   height: auto;

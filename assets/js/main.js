@@ -48,7 +48,7 @@ playAnim()
 
 
 function openNav() {
-  document.getElementById("sideNav").style.width = "350px";
+  document.getElementById("sideNav").style.width = "320px";
 }
 function closeNav() {
   document.getElementById("sideNav").style.width = "0";
@@ -56,7 +56,7 @@ function closeNav() {
 
 
 var menuRandom = document.getElementById("menu-random");
-  var arr = ["fa-radiation","fa-jedi-order","fa-rocket","fa-atom","fa-seedling","fa-wifi","fa-user-astronaut","fa-hand-spock","fa-dragon","fa-pizza-slice","fa-cat","fa-burger","fa-bacon","fa-utensils","fa-cookie", "fa-fish"];
+  var arr = ["fa-satellite","fa-radiation","fa-jedi","fa-rocket","fa-atom","fa-seedling","fa-wifi","fa-user-astronaut","fa-hand-spock","fa-dragon","fa-pizza-slice","fa-cat","fa-burger","fa-bacon","fa-utensils","fa-cookie", "fa-fish"];
   var randomItem = arr[Math.floor(Math.random()*arr.length)];
 window.onload = function(){
   menuRandom.classList.add(randomItem)
