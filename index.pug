@@ -7,14 +7,14 @@ html(lang="en")
 	body
 		header.display-flex.width-100vw.place-center
 			include ./components/_header.pug
-		div#particles-js
+		div.position-fixed#particles-js
 		<div class="hero align-items-center" id="hero">
 			<div class="row hero-content align-items-center">
 				<div class="col offset-2 offset-lg-4 align-items-center lh-sm">
 				<p class="print">print<span class="ps-2 bracket fw-light">(</span><span class="ps-2 comma">' </span></p>
 				<p class="print-hello fw-light text-light"> Hi! I'm César
-				.typing-container
-					.typeText#machine
+				.typing-container.text-uppercase.text-size-3xl.text-bold
+					.typeText.accent-color#machine
 				<p class="print"><span class="comma fw-light">'</span><span class="ps-2 bracket fw-light">)</span></p>
 				</div>
 			</div>

@@ -1,17 +1,20 @@
-.nav-bar(class= "display-flex"
+.nav-bar#nav(class= "background-dark index-over bottom-0 display-flex position-fixed"
         class="width-100vw"
         class="place-center"
-        class="transitio-5s")
+        class="transition-5s")
     .nav-container(class="display-inherit"
                     class="justify-between items-center"
                     class="width-100vw height-64 max-width-1300"
                     class="padding-x-32")
-        .nav-container-left
-            .menu-items.side-nav#sideNav(class="transition-5s")
+        .nav-container-left.text-size-18
+            .menu-items.side-nav.top-0#sideNav(class="height-100vh transition-5s overflow-hidden position-fixed")
                 +menuBar()
-            span(onClick="openNav()" class="transition-5s")
+            span(onClick="openNav()" class="menu-icon  display-flex justify-center items-center")
+                i.fa-solid.fa-bars.text.light-text
+                i#menu-random.fa-solid.random.text.light-text
+
             .nav-small_menu
         .nav-container-right(class="display-inherit padding-x-32")
-            span Cesar Cobos
+            span.text.light-text Cesar Cobos
             
         
