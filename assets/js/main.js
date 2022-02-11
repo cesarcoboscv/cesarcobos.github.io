@@ -10,7 +10,7 @@ var textToBeTypedArr = ["Civil Engineer", "Data Science", "Project Manager","Mec
 var index = 0, isAdding = true, textToBeTypedIndex = 0
 function playAnim() {
   setTimeout(function () {
-    // set the text of typeText to a substring of the text to be typed using index.
+
     typeText.innerText = textToBeTypedArr[textToBeTypedIndex].slice(0, index)
     if (isAdding) {
       // adding text

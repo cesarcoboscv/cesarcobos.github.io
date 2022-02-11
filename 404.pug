@@ -1,0 +1,24 @@
+-var page_title = "Oh! no!!!"
+include ./components/_mixins.pug
+<!DOCTYPE html>
+<html lang="en">
+	head
+		include ./components/_head.pug
+	body
+		header.display-flex.width-100vw.place-center
+			include ./components/_header.pug
+		div.position-fixed#particles-js
+	
+		<main>
+			<div class="container-fluid d-flex justify-content-center align-items-center error-section flex-column">
+				<p class="fs-1 fw-bold">Oh no!!!</p>
+				<p class="fs-1 fw-bold errorerror">404 Error</p>
+				<p class="fw-4 pt-3">Don't worry, you can get back to a previous page by clicking on the menu</p>
+			</div>
+		</main>
+
+		footer.display-flex.items-center.justify-center
+			include ./components/_footer.pug
+		
+			include ./components/_scripts.pug
+</html>

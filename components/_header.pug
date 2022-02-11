@@ -7,15 +7,13 @@
                     class="width-100vw height-64 max-width-1300"
                     class="padding-x-32")
         .nav-container-left.text-size-18
-            .menu-items.side-nav.background-dark.top-0#sideNav(class="height-100vh transition-5s overflow-hidden position-fixed")
+            .menu-items.side-nav.background-dark.top-0#sideNav(
+                class="height-100vh transition-5s overflow-hidden position-fixed")
                 +menuBar()
-            span(onClick="openNav()" class="menu-icon height-64 width-64 display-flex justify-center items-center")
+            span.menu-icon(onClick="openNav()"
+                class="display-flex justify-center items-center" 
+                class="height-64 width-64 ")
                 i.fa-solid.fa-bars.text.light-text
-                i#menu-random.fa-solid.random.text.light-text
-                    
-
-            .nav-small_menu
+                i#menu-random.random.fa-solid.text.light-text
         .nav-container-right(class="display-inherit padding-x-32")
             span.text.light-text Cesar Cobos
-            
-        

@@ -424,33 +424,6 @@ span {
     display: inline-block;
   }
 }
-footer {
-  width: 100%;
-  min-height: 80px;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  background-color: transparent;
-}
-footer p {
-  color: #2b4649;
-}
-footer .btn-outline-primary {
-  width: 40px;
-  height: 40px;
-  padding: 4px;
-  border: none;
-  border-radius: 8px;
-  margin: 0px 8px;
-}
-footer .btn-outline-primary svg path {
-  color: #2b4649;
-}
-footer .btn-outline-primary:hover {
-  background-color: transparent;
-}
-footer .btn-outline-primary:hover svg path {
-  color: #144f80;
-}
 
 .error-section {
   height: 70vh;
