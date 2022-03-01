@@ -6,12 +6,38 @@ mixin menuItemDisabled(link,name,class_1,class_2,class_3,tooltip)
         .span=tooltip
 
 mixin menuBar()
-    <a href="javascript:void(0)" class="shadow-color closebtn accent-hover text-size-3xl position-absolute" onClick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" class="shadow-color closebtn media-sm-bottom-24px media-lg-top-0 media-lg-left-180px accent-hover text-size-3xl position-absolute " onClick="closeNav()">&times;</a>
     +menuItem("../#hero","Home","translate-hover-x-32", "margin-top-48")
     +menuItem("../#aboutme","About_me","translate-hover-x-32")
     +menuItemDisabled("../projects/","Projects","translate-hover-x-32")
     +menuItem("../resume/","Resume","translate-hover-x-32")
     +menuItem("../blog/","Blog","translate-hover-x-32")
 
-mixin icon(id)
-    img(src=id , alt="", srcset="")
+mixin icon(id,alt)
+    img.icon-img(src=id , alt=alt)
+    //- id  https://drive.google.com/uc?export=view&id=1oHDIvVewakJD6LmZKjBAItqlm7fx1cN-
+
+mixin divider-title(title)
+    div.margin-y-64.container-fluid.d-flex.justify-content-center.title-container
+        div.row.font-mono
+            p.fs-6.pt-3.accent-color-second def
+                span.fs-3.px-2.font-mono()=title
+                span.fs-6.fw-normal.bracket ( )
+                span.fs-6.accent-color-third :
+
+mixin tooltip-text(text)
+    span.tooltype-text.light-text.font-italic.font-thin()=text
+
+
+mixin Data-Science-card()
+    .card-main 
+        .card-content
+            .card-icons
+                +icon("https://drive.google.com/uc?export=view&id=1WSBCEu3ikzugJVJdX9tat208aH2uCkWP", "Python Icon")
+                +icon("https://drive.google.com/uc?export=view&id=1k3Bo-937qIYHxVSkVJVOXEvs5ULAmwPT", "Linux Icon")
+                +icon("https://drive.google.com/uc?export=view&id=1P7TsOmeo188wQDbAmiFMiRst19Rr8kP_", "Google Colab Icon")
+                +icon("https://drive.google.com/uc?export=view&id=128qWjYVgEdaTqLN7pM6RU4MjOwCCLgn-", "Google Colab Icon")
+            .card-title 
+                p.font-bold Data Science
+            .card-text
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus error labore a explicabo, dignissimos dolor necessitatibus ex aut nobis ea officiis vero autem, aliquid eos fuga natus optio consequatur.

@@ -24,12 +24,6 @@ html a {
   text-decoration: none;
 }
 
-.divider {
-  width: 100%;
-  height: 75px;
-}
-
-
 
 .blog {
   height: auto;
@@ -96,89 +90,15 @@ html a {
   width: 95%;
 }
 
-.aboutme {
-  width: 100%;
-  height: auto;
-  margin: 24px 0px;
-}
-.aboutme .aboutme-container .btn {
-  letter-spacing: 1.2px;
-  border-radius: 8px;
-  width: 120px;
-  
-
-}
-.aboutme .aboutme-container .btn-secondary {
-  color: #144f80;
-  background-color: #144f80;
-  border: #144f80;
-  -webkit-transition: 1s;
-  transition: 1s;
-
-}
-.aboutme .aboutme-container .btn-secondary svg path {
-  color: white;
-}
-.aboutme .aboutme-container .btn-secondary span {
-  color: white;
-}
-.aboutme .aboutme-container .btn-secondary:hover {
-  background-color: transparent;
-  color: #144f80;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  border: 1px solid #144f80;
-}
-.aboutme .aboutme-container .btn-secondary:hover svg path {
-  color: #144f80;
-}
-.aboutme .aboutme-container .btn-secondary:hover span {
-  color: #144f80;
-}
-.aboutme .aboutme-container .btn-secondary:focus {
-  -webkit-box-shadow: 0px 0px 5px #144f80;
-          box-shadow: 0px 0px 5px #144f80;
-}
-.aboutme .aboutme-container .btn-outline-secondary {
-  color: #144f80;
-  border: 1px solid #144f80;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-.aboutme .aboutme-container .btn-outline-secondary span {
-  color: #144f80;
-}
-.aboutme .aboutme-container .btn-outline-secondary svg path {
-  color: #144f80;
-}
-.aboutme .aboutme-container .btn-outline-secondary:hover {
-  color: white;
-  background-color: #144f80;
-  border: 1px solid #144f80;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-.aboutme .aboutme-container .btn-outline-secondary:hover svg path {
-  color: white;
-}
-.aboutme .aboutme-container .btn-outline-secondary:hover span {
-  color: white;
-}
-.aboutme .aboutme-container .btn-outline-secondary:focus {
-  -webkit-box-shadow: 0px 0px 5px #144f80;
-          box-shadow: 0px 0px 5px #144f80;
-}
 
 span {
   font-weight: 600;
 }
-.aboutme-description{
-  z-index: 2;
-}
-.aboutme-description, .whatido, .card-container {
+
+.whatido, .card-container {
   letter-spacing: 0.5px;
 }
-.aboutme-description .profile-photo, .whatido .profile-photo, .card-container .profile-photo {
+.profile-photo, .whatido .profile-photo, .card-container .profile-photo {
   width: 250px;
   height: auto;
 }

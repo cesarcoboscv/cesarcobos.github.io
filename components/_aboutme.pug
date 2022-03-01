@@ -1,0 +1,24 @@
+div.aboutme.display-flex.justify-center.items-center.width-100vw.margin-y-24.position-relative.flex-column#aboutme
+	+divider-title("About Me")
+	div.aboutme-container.display-flex.justify-center.width-90vw.padding-y-48.media-lg-flex-row.media-sm-flex-column
+		div.about-content
+			div.about-content-description.media-lg-max-width-850px
+				p.text-size-18.text-uppercase.font-bold Cesar Cobos
+				p.text-size-small.font-italic Civil Engineer | Project Manager
+				p.text-size-small.padding-y-24.lineheight-200 I'm a Civil Engineer with knowlenge in <span> Project Management </span>, <span>Mechanical Design</span> and <span>Metallic Structures</span>. Currently I'm leading my path to a new way: <span>Programming</span>, <span>Data Science</span> and <span>Front End</span>. I write about my <span>experience learning</span> <span>code</span> and <span>engineering</span> in my blog.</p>
+				p.text-size-small Check out my projects and resume
+			div.aboutme-buttons.padding-y-24.display-flex.justify-center.media-lg-flex-end
+				button(type="button" class="button button-border hover-background-dark tooltype background-transparent transition-5s")
+					+tooltip-text("View my Projects")
+					a(href="../projects/" rel="noreferrer")
+						span.fa-solid.fa-layer-group.text-size-small
+						span.hover-color-light.font-thin.padding-x-4 Projects
+				button(type="button" class="button button-solid background-dark tooltype transition-5s")
+					+tooltip-text("View my Resume")
+					a(href="../resume/" rel="noreferrer") 
+						span.fa-solid.fa-file-lines
+						span.font-thin.padding-x-4 Resume
+		div.aboutme-photo.tooltype.display-flex.justify-center
+			+tooltip-text("This is me")
+			img(src="https://drive.google.com/uc?export=view&id=1GTRVzAfkOw2l_FKBV5MIHN--4A4mEVOH", alt="" width="200px")
+			

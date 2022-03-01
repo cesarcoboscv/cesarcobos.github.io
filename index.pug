@@ -5,59 +5,22 @@ html(lang="en")
 	head
 		include ./components/_head.pug
 	body
+		
 		header.display-flex.width-100vw.place-center
 			include ./components/_header.pug
-		div.position-fixed#particles-js
+			div#particles-js
 		include ./components/_hero.pug
-
+		
+		
 		<main>
-			<section class="aboutme" id="aboutme">
-				<div class="divider"></div>
-					<div class="container-fluid d-flex justify-content-center">
-					<div class="row font-mono">
-						<p class="fs-6 pt-3 accent-color-second">def <span class="fs-3 px-2 font-mono">About Me</span><span class="fs-6 fw-normal bracket">( )</span><span class="fs-6 accent-color-third">:</span></p>
-					</div>
-					</div>
-			<div class="container-fluid d-flex justify-content-center pb-5 aboutme-container pt-5">
-				<div class="row aboutme-description d-flex justify-content-center">
-				<div class="col-11 col-md-7">
-					<p class="fs-1 fw-bold text-uppercase">Cesar Cobos</p>
-					<p class="mb-5 small fst-italic">Civil Engineer | Project Manager</p>
-					<p class="small lh-lg">I'm a Civil Engineer with knowlenge in <span> Project Management </span>, <span>Mechanical Design</span> and <span>Metallic Structures</span>. Currently I'm leading my path to a new way: <span>Programming</span>, <span>Data Science</span> and <span>Front End</span>. I write about my <span>experience learning</span> <span>code</span> and <span>engineering</span> in my blog.</p>
-					<p class="mb-5 small">Check out my projects and resume</p>
-					<div class="col d-flex justify-content-center offset-md-5 offset-lg-9 offset-xl-10 button-layer">
-					<aabr data-bs-toggle="tooltip" data-bs-placement="bottom" title="View my projects">
-						<a href="../projects/" rel="noreferrer">
-						<button type="button" aria-label="project-button" class="btn-box btn btn-secondary text-light btn-sm text-center p-2 mx-2">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" class="bi" viewBox="0 0 16 16">
-							<path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
-							</svg>
-							<span>Projects</span>
-						</button>
-						</a>
-					</aabr>				                
-					<aabr data-bs-toggle="tooltip" data-bs-placement="bottom" title="View my resume">
-						<a href="./resume/" rel="noreferrer">
-						<button type="button" aria-label=" " class="btn-box btn btn-outline-secondary btn-sm text-center p-2 mx-2 ">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" class="bi" viewBox="0 0 16 16">
-							<path d="M7.05 11.885c0 1.415-.548 2.206-1.524 2.206C4.548 14.09 4 13.3 4 11.885c0-1.412.548-2.203 1.526-2.203.976 0 1.524.79 1.524 2.203zm-1.524-1.612c-.542 0-.832.563-.832 1.612 0 .088.003.173.006.252l1.559-1.143c-.126-.474-.375-.72-.733-.72zm-.732 2.508c.126.472.372.718.732.718.54 0 .83-.563.83-1.614 0-.085-.003-.17-.006-.25l-1.556 1.146zm6.061.624V14h-3v-.595h1.181V10.5h-.05l-1.136.747v-.688l1.19-.786h.69v3.633h1.125z"/>
-							<path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
-							</svg> 
-							<span>Resume</span>
-						</button>
-						</a>
-					</aabr>
-					</div>
-				</div>
-				<div class="col-md-4 col-image pt-4 pt-md-0 d-flex justify-content-center align-items-center"><aabr data-bs-toggle="tooltip" data-bs-placement="bottom" title="This is me"><img class="profile-photo" src="https://bl3302files.storage.live.com/y4m4C9umNgwfUOOuAN-CdVryzG_EYBGK_SOihGGLa7F81xSfA9GIQ29oQr_eHKdvY2L2wmkdjjgTRfPMgVrDXcjddYEisunYxAXbetcUWKh5373S8pHU67wXOGccccJPY-uqGQ5D9DvV1wt9v7G0f-HFWD75aO1wiM4ryfC2JTTW2M14jCZbEnxLBPxtL_uQqpf?width=512&amp;height=512&amp;cropmode=none" alt=" Profile image" width="100" height="100"></aabr></div>
-			</div>
-			</div>
+			include ./components/_aboutme.pug
+			
 			<div class="container-fluid d-flex justify-content-center py-4 title-container">
 				<div class="row font-mono">
 				<p class="fs-6 pt-3 accent-color-second">def <span class="fs-3 px-2 font-mono">What I do</span><span class="fs-6 fw-normal bracket">( )</span><span class="fs-6 comma">:</span></p>
 				</div>
 			</div>
-			<div class="container-fluid d-flex justify-content-center aboutme-container pt-5">
+			<div class="container-fluid d-flex justify-content-center media-lg-flex-row pt-5">
 				<div class="row whatido justify-content-center small lh-lg">
 				<div class="col-11">
 					<p>Besides my engineering <span>experience</span> I´m leading a new path to <span>learn programming</span>, this has helped me to <span>reduce times</span> and <span>improve processes</span> below is a quick overeview of my technical skils.  Check out my resume for more details.</p>
@@ -152,8 +115,10 @@ html(lang="en")
 					<div class="card-title">Design Products</div><p class="card-text">Knowledge in <span>Adobe</span> products: <span> Photoshop </span> , <span>Illustrator</span>. and <span>Corel Draw</span> skills</p>
 		</div></div></div></div></div></div>
 		</section>
+
 		</main>
-		footer.display-flex.items-center.justify-center
+		footer.display-flex.items-center.justify-center.media-lg-height-144px.media-sm-height-300px
 			include ./components/_footer.pug
 	include ./components/_scripts.pug
+	
 </html>
