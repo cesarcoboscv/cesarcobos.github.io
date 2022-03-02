@@ -2,7 +2,7 @@
   --dark-color:black;
   --light-color:white;
   --dark-text-color:#1d1e1f;
-  --shadow-text-color:gray;
+  --shadow-text-color:rgba(0, 0, 0, 0.219);
   --light-text-color:white;
   --accent-color:#DEFF8B;
   --accent-color-second:#9365DB;
@@ -12,10 +12,25 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: 0;
-          box-sizing: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: var(--dark-color);
   font-family: "Spartan", sans-serif;
+}
+
+html {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+html a {
+  text-decoration: none;
 }
 
 .display-flex {
@@ -34,6 +49,11 @@
 
 .display-block {
   display: block;
+}
+
+.display-grid {
+  display: -ms-grid;
+  display: grid;
 }
 
 .flex-column {
@@ -58,8 +78,12 @@
   width: 90vw;
 }
 
+.width-80vw {
+  width: 80vw;
+}
+
 .max-width-1300 {
-  max-width: 1200px;
+  max-width: 1300px;
 }
 
 .height-64 {
@@ -148,8 +172,20 @@
   overflow: hidden;
 }
 
+.padding-16 {
+  padding: 16px;
+}
+
 .padding-y-24 {
   padding: 24px 0;
+}
+
+.padding-top-48 {
+  padding-top: 48px;
+}
+
+.padding-bottom-48 {
+  padding-bottom: 48px;
 }
 
 .transition-5s {
@@ -260,8 +296,6 @@
 }
 
 .button {
-  border-radius: 12px;
-  border: 1px solid gray;
   margin: 24px;
   padding: 8px 16px;
   font-size: 0.9rem;
@@ -356,6 +390,10 @@
   .media-sm-height-300px {
     height: 300px;
   }
+
+  .media-sm-width-90vw {
+    width: 90vw;
+  }
 }
 @media screen and (min-width: 768px) {
   .media-lg-max-width-850px {
@@ -419,6 +457,15 @@
     margin-right: 48px;
   }
 }
+p > span {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+  }
+}
 .tooltype {
   position: relative;
 }
@@ -426,30 +473,43 @@
 .tooltype-text {
   visibility: hidden;
   background-color: rgba(31, 31, 31, 0.65);
-  width: auto;
+  z-index: 2;
   text-align: center;
   padding: 4px;
   border-radius: 6px;
   font-size: 0.8rem;
+  min-width: 70px;
   position: absolute;
-  top: 125%;
-  left: 50%;
-  margin-left: -60px;
 }
 
-.tooltype .tooltype-text::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
+.bottom {
+  top: 125%;
   left: 50%;
-  margin-left: -5px;
-  border-width: -5px;
-  border-style: solid;
-  border-color: transparent transparent rgba(31, 31, 31, 0.65) transparent;
+}
+
+.top {
+  bottom: 125%;
+  left: 50%;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltype:hover .tooltype-text {
   visibility: visible;
   opacity: 1;
+}
+
+.grid-container {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-rows: ;
+  grid-template-rows: repeat(auto, 100px);
+  gap: 16px;
+}
+
+.grid-container .card, .button {
+  border: 1px solid var(--shadow-text-color);
+  border-radius: 12px;
+}
+
+.icon-img {
+  margin: 16px 4px;
 }

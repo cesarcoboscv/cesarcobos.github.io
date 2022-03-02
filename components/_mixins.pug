@@ -13,31 +13,22 @@ mixin menuBar()
     +menuItem("../resume/","Resume","translate-hover-x-32")
     +menuItem("../blog/","Blog","translate-hover-x-32")
 
-mixin icon(id,alt)
-    img.icon-img(src=id , alt=alt)
-    //- id  https://drive.google.com/uc?export=view&id=1oHDIvVewakJD6LmZKjBAItqlm7fx1cN-
+mixin icon(id,alt,tip,pos)
+    span.tooltype
+        img.icon-img(src=id , alt=alt, width="36px",onContextMenu="return false;")
+        +tooltip-text(tip,pos)
+        //- id  https://drive.google.com/uc?export=view&id=1oHDIvVewakJD6LmZKjBAItqlm7fx1cN-
 
-mixin divider-title(title)
-    div.margin-y-64.container-fluid.d-flex.justify-content-center.title-container
-        div.row.font-mono
-            p.fs-6.pt-3.accent-color-second def
-                span.fs-3.px-2.font-mono()=title
-                span.fs-6.fw-normal.bracket ( )
-                span.fs-6.accent-color-third :
+mixin divider-title(title,id)
+    div.divider-title.margin-y-64.padding-top-48.max-width-1300px.width-90vw.display-flex.justify-center.title-container(id=id)
+        div.width-90vw.max-width-1300.padding-top-48
+            p.accent-color-second def
+                span.padding-x-4.text-size-18.font-mono()=title
+                span.font-thin ( )
+                span.accent-color-third :
 
-mixin tooltip-text(text)
-    span.tooltype-text.light-text.font-italic.font-thin()=text
+mixin tooltip-text(text,position)
+    span.tooltype-text.light-text.font-italic.font-thin(class=position)=text
 
-
-mixin Data-Science-card()
-    .card-main 
-        .card-content
-            .card-icons
-                +icon("https://drive.google.com/uc?export=view&id=1WSBCEu3ikzugJVJdX9tat208aH2uCkWP", "Python Icon")
-                +icon("https://drive.google.com/uc?export=view&id=1k3Bo-937qIYHxVSkVJVOXEvs5ULAmwPT", "Linux Icon")
-                +icon("https://drive.google.com/uc?export=view&id=1P7TsOmeo188wQDbAmiFMiRst19Rr8kP_", "Google Colab Icon")
-                +icon("https://drive.google.com/uc?export=view&id=128qWjYVgEdaTqLN7pM6RU4MjOwCCLgn-", "Google Colab Icon")
-            .card-title 
-                p.font-bold Data Science
-            .card-text
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus error labore a explicabo, dignissimos dolor necessitatibus ex aut nobis ea officiis vero autem, aliquid eos fuga natus optio consequatur.
+mixin grid-card-container()
+    .grid-container.display-grid.width-90vw.max-width-1300.justify-center.padding-top-48-padding-bottom-48
