@@ -4,6 +4,7 @@
     --light-color:white;
     --dark-text-color:#1d1e1f;
     --shadow-text-color:rgba(0, 0, 0, 0.219);
+    --grayed-text-color:gray;
     --light-text-color:white;
     --accent-color:#DEFF8B;
     --accent-color-second:#9365DB;
@@ -233,8 +234,8 @@ html {
 .accent-color-third {
     color: var(--accent-color-third);
   } 
-.shadow-color{
-    color: var(--shadow-text-color);
+.grayed-color{
+    color: var(--grayed-text-color);
 }
 .background-transparent{
     background-color: transparent;
