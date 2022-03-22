@@ -6,7 +6,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 var typeText = document.getElementById("machine")
 var textToBeTyped = "Civil Engineer"
-var textToBeTypedArr = ["Civil Engineer", "Data Science", "Project Manager","Mechanical Design", "FrontEnd Dev"]
+var textToBeTypedArr = ["Civil Engineering", "Data Science", "Project Management","Mechanical Design", "FrontEnd Dev"]
 var index = 0, isAdding = true, textToBeTypedIndex = 0
 function playAnim() {
   setTimeout(function () {
@@ -48,7 +48,7 @@ playAnim()
 
 
 function openNav() {
-  document.getElementById("sideNav").style.width = "320px";
+  document.getElementById("sideNav").style.width = "100vw";
 }
 function closeNav() {
   document.getElementById("sideNav").style.width = "0";
@@ -68,22 +68,22 @@ var barNav = document.getElementById("nav");
 var elements = document.getElementsByClassName("text");
 window.onscroll = function(){
     if (document.documentElement.scrollTop >= 80){
-        barNav.classList.add("background-light");
-        barNav.classList.remove("background-dark")
-        // console.log("Scroll On - color change");
-        for (let i = 0; i < elements.length; i++){
-          
-          elements[i].classList.remove("light-text")
-          elements[i].classList.add("dark-text")
-        }
-    }else{
-        barNav.classList.remove("background-light")
         barNav.classList.add("background-dark");
-        // console.log("Scroll Off - color change");
+        barNav.classList.remove("background-light")
+        // console.log("Scroll On - color change");
         for (let i = 0; i < elements.length; i++){
           
           elements[i].classList.remove("dark-text")
           elements[i].classList.add("light-text")
+        }
+    }else{
+        barNav.classList.remove("background-dark")
+        barNav.classList.add("background-light");
+        // console.log("Scroll Off - color change");
+        for (let i = 0; i < elements.length; i++){
+          
+          elements[i].classList.remove("light-text")
+          elements[i].classList.add("dark-text")
         }
 
     }

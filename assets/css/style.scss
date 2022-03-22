@@ -133,6 +133,9 @@ html {
 .padding-x-32{
     padding: 0 32px;
 }
+.padding-x-16{
+    padding: 0 16px;
+}
 .overflow-hidden{
     overflow: hidden;
 }
@@ -200,6 +203,9 @@ html {
 }
 .text-size-small{
     font-size: .9rem;
+}
+.font-bolder{
+    font-weight: 800;
 }
 .font-bold{
     font-weight: 600;
@@ -298,13 +304,11 @@ html {
 
 
 
-.typing-container{
-    margin: 96px 0 128px 0;
-}
 .side-nav {
     width: 0;
     left: 0;
     padding-top: 64px;
+    max-width: 425px;
 
   }
 .side-nav a {
@@ -324,12 +328,16 @@ html {
     }
   }
 .hero-content {
-    margin-left: 16vw;
+    margin-left: 8vw;
     width: 80vw;
     letter-spacing: 2px;
 }
 
+.closebtn{
+    display: flex;
+    width: 100%;
 
+}
 
 // screen size options
 @media screen and (max-height: 468px) {
@@ -351,7 +359,17 @@ html {
     .media-sm-width-90vw{
         width: 90vw;
     }
+  
     
+    .nav-container-left{
+        display: flex;
+        justify-content: end;
+        width: 50vw;
+    }
+    .closebtn{
+        justify-content: center;
+        width: 100%;
+    }
   }
   
   
@@ -395,7 +413,14 @@ html {
     .media-lg-margin-right-48{
         margin-right: 48px;
     }
-    
+
+    .closebtn{
+        justify-content: end;
+        // background-color: #DEFF8B;
+     }
+     .side-nav {
+        max-width: 300px;
+      }
 }
 
 p > span{
