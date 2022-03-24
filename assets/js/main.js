@@ -82,8 +82,10 @@ window.onscroll = function(){
         // console.log("Scroll Off - color change");
         for (let i = 0; i < elements.length; i++){
           
-          elements[i].classList.remove("light-text")
-          elements[i].classList.add("dark-text")
+          // elements[i].classList.remove("light-text")
+          // elements[i].classList.add("dark-text")
+          elements[i].classList.remove("dark-text")
+          elements[i].classList.add("light-text")
         }
 
     }
