@@ -65,7 +65,7 @@ window.onload = function(){
 
 
 var barNav = document.getElementById("nav");
-var elements = document.getElementsByClassName("text");
+var elements = document.getElementsByClassName("dark");
 window.onscroll = function(){
     if (document.documentElement.scrollTop >= 80){
         barNav.classList.add("background-dark");
