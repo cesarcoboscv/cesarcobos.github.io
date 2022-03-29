@@ -6,8 +6,8 @@ mixin menuItemDisabled(link,name,class_1,class_2,class_3,tooltip)
         .span=tooltip
 
 mixin menuBar()
-    <a href="javascript:void(0)" class="grayed-color closebtn media-sm-bottom-24px media-lg-top-0 accent-hover text-size-3xl position-absolute " onClick="closeNav()">&times;</a>
-    +menuItem("../#hero","Home","translate-hover-x-32", "margin-top-48")
+    <a href="javascript:void(0)" class="grayed-color closebtn media-sm-bottom-24px media-lg-top-0 accent-hover text-size-5xl position-absolute " onClick="closeNav()">&times;</a>
+    +menuItem("../#hero","Home","translate-hover-x-32", "margin-top-12")
     +menuItem("../#aboutme","About_me","translate-hover-x-32")
     +menuItemDisabled("../projects/","Projects","translate-hover-x-32")
     +menuItem("../resume/","Resume","translate-hover-x-32")
@@ -20,10 +20,10 @@ mixin icon(id,alt,tip,pos)
         //- id  https://drive.google.com/uc?export=view&id=1oHDIvVewakJD6LmZKjBAItqlm7fx1cN-
 
 mixin divider-title(title,id)
-    div.divider-title.margin-y-64.padding-top-48.max-width-1300px.width-90vw.display-flex.justify-center.title-container(id=id)
-        div.width-90vw.max-width-1300.padding-top-48
+    div.divider-title.margin-y-16.padding-top-12.max-width-1300px.width-90vw.display-flex.justify-center.title-container(id=id)
+        div.width-90vw.max-width-1300.padding-top-12
             p.accent-color-second def
-                span.padding-x-4.text-size-18.font-mono()=title
+                span.padding-x-1.text-size-3xl.font-mono()=title
                 span.font-thin ( )
                 span.accent-color-third :
 
@@ -31,4 +31,4 @@ mixin tooltip-text(text,position)
     span.tooltype-text.light-text.font-italic.font-thin(class=position)=text
 
 mixin grid-card-container()
-    .grid-container.display-grid.width-90vw.max-width-1300.justify-center.padding-top-48-padding-bottom-48
+    .grid-container.display-grid.width-90vw.max-width-1300.justify-center.padding-top-12-padding-bottom-12

@@ -68,14 +68,17 @@ html {
 .max-width-1300{
     max-width: 1300px;
 }
-.height-64{
-    height: 64px;
+.height-16{
+    height: 4rem;
 }
-.width-64{
-    width: 64px;
+.width-16{
+    width: 4rem;
 }
 .height-100vh{
     height: 100vh;
+}
+.height-100{
+    height: 100%;
 }
 
 
@@ -115,41 +118,44 @@ html {
 
 
 // margin  options
-.margin-x-16{
-    margin: 0 16px;
+.margin-x-4{
+    margin: 0 1rem;
 }
-.margin-y-64{
-    margin: 64px 0;
+.margin-y-16{
+    margin: 4rem 0;
 }
-.margin-y-24{
-    margin: 24px 0;
+.margin-y-6{
+    margin: 1.5rem 0;
 }
-.margin-top-48{
-    margin-top: 48px;
+.margin-top-12{
+    margin-top: 3rem;
 }
-.padding-x-4{
-    padding: 0 4px;
-}
-.padding-x-32{
-    padding: 0 32px;
-}
-.padding-x-16{
-    padding: 0 16px;
-}
+
 .overflow-hidden{
     overflow: hidden;
 }
-.padding-16{
-    padding: 16px;
+
+//padding options
+.padding-x-1{
+    padding: 0 .25rem;
 }
-.padding-y-24{
-    padding: 24px 0;
+.padding-x-8{
+    padding: 0 2rem;
 }
-.padding-top-48{
-    padding-top: 48px;
+.padding-x-4{
+    padding: 0 1rem;
 }
-.padding-bottom-48{
-    padding-bottom: 48px;
+.padding-4{
+    padding: 1rem;
+}
+.padding-y-6{
+    padding: 1.5rem 0;
+}
+.padding-top-12{
+    padding-top: 3rem;
+}
+.padding-bottom-12{
+    padding-bottom: 3rem;
 }
 
 
@@ -189,33 +195,37 @@ html {
 .text-uppercase{
     text-transform: uppercase;
 }
-.text-size-3xl{
-    font-size: 3rem;
+.text-size-small{
+    font-size: .875rem;
 }
-.text-size-15 {
+.text-size-xl{
+    font-size: 1.25rem;
+}
+.text-size-2xl {
     font-size: 1.5rem;;
 }
-.text-size-12{
-    font-size: 1.2rem;
+.text-size-3xl{
+    font-size: 1.875rem;
 }
-.text-size-18{
-    font-size: 1.8rem;
+.text-size-5xl{
+    font-size: 3rem;
 }
-.text-size-small{
-    font-size: .9rem;
-}
-.font-bolder{
-    font-weight: 800;
+
+
+.font-thin{
+    font-weight: 100;
 }
 .font-bold{
     font-weight: 600;
 }
+.font-bolder{
+    font-weight: 800;
+}
+
 .font-italic{
     font-style: italic;
 }
-.font-thin{
-    font-weight: 100;
-}
+
 .font-mono {
     font-family: "IBM Plex Mono", monospace;
   }
@@ -250,8 +260,13 @@ html {
     border-top: 1px solid black;
 }
 
+#particles-js{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
 
-
+//not asigned yet
 .button{
     margin: 24px;
     padding: 8px 16px;
@@ -281,17 +296,9 @@ html {
     }
 }
 
-
 .aboutme-photo{
     min-width: 300px;
     height: 220px;
-}
-
-
-#particles-js{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
 }
 
 
@@ -301,8 +308,6 @@ html {
     transform: scale(1.2);}
 
 }
-
-
 
 .side-nav {
     width: 0;
@@ -347,6 +352,7 @@ html {
 
 
   @media screen and (max-width:767px){
+    
     .media-sm-flex-column{
         flex-direction: column;
     }
@@ -374,9 +380,6 @@ html {
   
   
 @media screen and (min-width:768px) {
-    // .media-lg-max-width-850px{
-    //     max-width: 850px;
-    // }
     .media-lg-max-width-850px{
         max-width: 850px;
     }
@@ -413,10 +416,12 @@ html {
     .media-lg-margin-right-48{
         margin-right: 48px;
     }
+    .menu-items{
+        height: 100vh;
+    }
 
     .closebtn{
         justify-content: end;
-        // background-color: #DEFF8B;
      }
      .side-nav {
         max-width: 300px;
