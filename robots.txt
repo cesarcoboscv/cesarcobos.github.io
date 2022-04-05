@@ -1,0 +1,5 @@
+disallow: /components/
+disallow: /assets/
+disallow: /resume/
+disallow: /projects/
+
