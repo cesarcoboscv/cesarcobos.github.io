@@ -1,10 +1,14 @@
-- var page_title = "Home"
+- var page_title = "César Cobos"
+- var keywords="Cesar Cobos Civil Engineer"
+- var nameDescription = "Hey! I'm César, I'm a Civil Engineer with knowledge in Project Management, Structural Design. Also i kwon about programming languages as Python, JS, C and Front-End development."
+
 include ./components/_mixins.pug
+
 doctype html
 html(lang="en")
 	head
 		include ./components/_head.pug
-		meta(name="description" content="Hey! I'm César, I'm a Civil Engineer with knowledge in Project Management, Structural Design. Also i kwon about programming languages as Python, JS, C and Front-End development.")
+		
 	body
 		
 		header.display-flex.width-100vw.place-center
@@ -13,7 +17,7 @@ html(lang="en")
 		include ./components/_hero.pug
 		
 		
-		main
+		main.lineheight-200
 			include ./components/_aboutme.pug
 			include ./components/_whatido.pug
 		footer.display-flex.items-center.justify-center.media-lg-height-144px.media-sm-height-300px

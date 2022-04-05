@@ -71,6 +71,9 @@ html {
 .height-16{
     height: 4rem;
 }
+.height-80vh{
+    height: 80vh;
+}
 .width-16{
     width: 4rem;
 }
@@ -97,6 +100,9 @@ html {
 }
 .bottom-0{
     bottom: 0;
+}
+.bottom-100{
+    bottom: 100px;
 }
 .index-over{
     z-index: 3;
@@ -232,6 +238,12 @@ html {
 .lineheight-200{
     line-height: 200%;
 }
+.lineheight-400{
+    line-height: 400%;
+}
+.flip-xy{
+    transform: scale(-1, -1);
+}
 
 
 // General
@@ -365,7 +377,7 @@ html {
     .media-sm-width-90vw{
         width: 90vw;
     }
-  
+   
     
     .nav-container-left{
         display: flex;

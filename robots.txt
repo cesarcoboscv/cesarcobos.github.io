@@ -1,5 +1,7 @@
+user-agent: *
 disallow: /components/
 disallow: /assets/
 disallow: /resume/
 disallow: /projects/
 
+sitemap: https://cesar-cobos.com/sitemap.xml

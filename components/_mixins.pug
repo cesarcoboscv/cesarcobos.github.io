@@ -10,8 +10,8 @@ mixin menuBar()
     +menuItem("../#hero","Home","translate-hover-x-32", "margin-top-12")
     +menuItem("../#aboutme","About_me","translate-hover-x-32")
     +menuItemDisabled("../projects/","Projects","translate-hover-x-32")
-    +menuItem("../resume/","Resume","translate-hover-x-32")
-    +menuItem("../blog/","Blog","translate-hover-x-32")
+    +menuItemDisabled("../resume/","Resume","translate-hover-x-32")
+    +menuItemDisabled("../blog/","Blog","translate-hover-x-32")
 
 mixin icon(id,alt,tip,pos)
     span.tooltype
