@@ -1,5 +1,9 @@
-script(src="../assets/js/main.js")
-script(src="../assets/js/particles.min.js") 
-script(src="../assets/js/app.js") 
-script(src="https://kit.fontawesome.com/32dce108fb.js" crossorigin="anonymous")
-link(rel="stylesheet", href="../assets/css/style.css")
+script(defer src="../assets/js/main.js")
+script(defer src="../assets/js/particles.min.js") 
+script(defer src="../assets/js/app.js") 
+script(defer src="https://kit.fontawesome.com/32dce108fb.js" crossorigin="anonymous")
+//- link(rel="stylesheet", href="../assets/css/style.css")
+
+link(rel="preload", href="../assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'")
+noscript 
+    link(rel="stylesheet" href="../assets/css/style.css")
