@@ -6,7 +6,7 @@ mixin menuItemDisabled(link,name,class_1,class_2,class_3,tooltip)
         .span=tooltip
 
 mixin menuBar()
-    <a aria-label="closebutton" class="grayed-color closebtn media-sm-bottom-24px media-lg-top-0 accent-hover text-size-5xl position-absolute " onClick="closeNav()">&times;</a>
+    <span aria-label="closebutton" class="grayed-color closebtn media-sm-bottom-24px media-lg-top-0 accent-hover text-size-5xl position-absolute " onClick="closeNav()">&times;</span>
     +menuItem("../#hero","Home","translate-hover-x-32", "margin-top-12")
     +menuItem("../#aboutme","About_me","translate-hover-x-32")
     +menuItemDisabled("../projects/","Projects","translate-hover-x-32")
