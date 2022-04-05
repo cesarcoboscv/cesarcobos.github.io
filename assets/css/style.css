@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400&display=swap");
 :root {
   --dark-color:black;
   --light-color:white;
@@ -6,7 +8,7 @@
   --grayed-text-color:gray;
   --light-text-color:white;
   --accent-color:#DEFF8B;
-  --accent-color-second:#9365DB;
+  --accent-color-second:#5d23b9;
   --accent-color-third: #FF5151;
 }
 
@@ -254,6 +256,10 @@ html a {
 
 .text-size-3xl {
   font-size: 1.875rem;
+}
+
+.text-size-4xl {
+  font-size: 2.25rem;
 }
 
 .text-size-5xl {
