@@ -8,69 +8,71 @@ include ../components/_mixins.pug
 <html lang="en">
 	head
 		include ../components/_head.pug
-	<body> 
+	body
 		header
 			include ../components/_header.pug
-<main>
-div#particles-js
-<section class="blog"> 
-<div class="container-fluid d-flex justify-content-center blog-container">
-<div class="row justify-content-center py-5">
-<div class="col border py-5 article-entry justify-content-center d-lg-flex small">
-<div class="col-12 col-lg-4 d-flex justify-content-center"><img src="https://bl3302files.storage.live.com/y4mukG00pe289A48g9rv5v6YtgBh_Gboz8LktFCfT5x6lZsHSfd4_oztiYhNq29PAA2aCtgp-z6tts6D5AIFanqYV5iwEhujPOgi2hqWGjf8Fj6y3x73pPFNFj0TiqoYQaU2IA8WKo2Snu46cxutJ5xOkaImvBNQtfLCTluTZkqPqUIozkiaYSt9JvC6snjFA6w?width=400&amp;height=300&amp;cropmode=none" alt="Linux command prompt"></div>
-<div class="col-12 col-lg-7 ps-3 pt-3">
-<div class="col px-3">
-<p class="fw-light theme">Command line, Linux</p>
-<p class="fs-4 fw-bolder">Command prompt and the apocalypse</p>
-<p>Time ago I was wondering what the command prompt is for, well, this is what I got from thinking several hours about it</p>
-<p class="small date">Nov 01 2021 <span class="ps-2">by César</span></p>
-</div>
-<div class="col px-1 d-flex align-items-stretch">
-<button class="btn-read btn btn-secondary border-0 bg-transparent" type="button" data-bs-toggle="modal" data-bs-target="#terminal-apocalypse">Read it<span class="bi bi-caret-right fs-5"></span></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-	</main>
+		main
+			div#particles-js
+			include ../components/_blog_main.pug
+		footer.display-flex.items-center.justify-center
+			include ../components/_footer.pug	
+			include ../components/_scripts.pug
+//- <section class="blog"> 
+//- <div class="container-fluid d-flex justify-content-center blog-container">
+//- <div class="row justify-content-center py-5">
+//- <div class="col border py-5 article-entry justify-content-center d-lg-flex small">
+//- <div class="col-12 col-lg-4 d-flex justify-content-center"><img src="https://bl3302files.storage.live.com/y4mukG00pe289A48g9rv5v6YtgBh_Gboz8LktFCfT5x6lZsHSfd4_oztiYhNq29PAA2aCtgp-z6tts6D5AIFanqYV5iwEhujPOgi2hqWGjf8Fj6y3x73pPFNFj0TiqoYQaU2IA8WKo2Snu46cxutJ5xOkaImvBNQtfLCTluTZkqPqUIozkiaYSt9JvC6snjFA6w?width=400&amp;height=300&amp;cropmode=none" alt="Linux command prompt"></div>
+//- <div class="col-12 col-lg-7 ps-3 pt-3">
+//- <div class="col px-3">
+//- <p class="fw-light theme">Command line, Linux</p>
+//- <p class="fs-4 fw-bolder">Command prompt and the apocalypse</p>
+//- <p>Time ago I was wondering what the command prompt is for, well, this is what I got from thinking several hours about it</p>
+//- <p class="small date">Nov 01 2021 <span class="ps-2">by César</span></p>
+//- </div>
+//- <div class="col px-1 d-flex align-items-stretch">
+//- <button class="btn-read btn btn-secondary border-0 bg-transparent" type="button" data-bs-toggle="modal" data-bs-target="#terminal-apocalypse">Read it<span class="bi bi-caret-right fs-5"></span></button>
+//- </div>
+//- </div>
+//- </div>
+//- </div>
+//- </div>
+//- </section>
+//- 	</main>
 
 	footer.display-flex.items-center.justify-center
 		include ../components/_footer.pug
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="../assets/main.js"> </script><div class="modal fade" id="terminal-apocalypse" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-<div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title py-3 text-center" id="terminal-apocalypse">Comand prompt and the apocalypse</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-</div>
-<div class="modal-body d-flex justify-content-center">
-<div class="body-content small">
-<p>What the command promt is for?</p>
-<p>Well, time ago I was wondering that, and I came to the conclusion that this tool is: the one that few people really know and the one that a lot of people have no idea that it exist</p>
-<p>This "terminal" or in common language known as "CMD" by some or "Command promtp" for others, is notthing more than a program, as it doesn't have a graphical interface allow us to manipulate the Operating system in a fast and advance way based on commands. This terminal is divided in two the Terminal itself (interface) and the shell (the core).</p>
-<P>In technical words, the terminal is that interface that allow us to interact with the shell, and the shell is the text interface that take the commands and translate it to machine language to say to the computer what it has to do</P>
-<p>Advantage </p>
-<ul> 
-<li><span>Over 9000</span>
-<p>The work flow i really fast, since as it doesn't have a graphical interface, all the commands executes in a direct way with the computer. Compared to a graphical interface, in addition to being pretty, it require more resourses and other commands that runs alongside what we need, as extra services.</p>
-</li>
-<li> <span>Danger Zone</span>
-<p>Since as we can work without a graphical interface, the command prompt allow us to communicate with low layers of the operating systems, it can be positive regarding to work flow, but also it can result dangerous, because while we work at low layers of the O.S. we can execute commands that can damage or delete primal files of our system </p>
-</li>
-<li> <span>Hacking like a boss </span>
-<p>You can´t deny it, using the command prompt makes us feel like movie hacker, and although it is different from reality, believe it!, someome that doesn't know about it and sees you using the command prompt will think that you're a hacker, even if you only know how to do this: </p>
-<div class="image d-flex justify-content-center p-5"><img src="https://bl3302files.storage.live.com/y4mJhX5MeCoqcF-CGxl_nYTNTPO_5lVChydGuvEn7R6hXxqK0ZrSMUTQOqT5zJ5jTnwohuajdgjQj1YzUu3SoJd7uufM-7dr0Uk4kQapft24JypOYix-jjYUucnOiyivrHFVCAmdqk5jD86G1aVWJq9lfhAUm8KI3qvdGKU9wci7MfYResweUxuy8YJ6UBZtiso?width=327&amp;height=167&amp;cropmode=none" alt="cowsay image"></div>
-</li>
-</ul>
-</div></div>
-<div class="modal-footer">
-</div>
-</div>
-</div>
-</div>
-include ../components/_scripts.pug
-</body>
-</html>
+//- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+//- <script src="../assets/main.js"> </script><div class="modal fade" id="terminal-apocalypse" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+//- <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+//- <div class="modal-content">
+//- <div class="modal-header">
+//- <h5 class="modal-title py-3 text-center" id="terminal-apocalypse">Comand prompt and the apocalypse</h5>
+//- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+//- </div>
+//- <div class="modal-body d-flex justify-content-center">
+//- <div class="body-content small">
+//- <p>What the command promt is for?</p>
+//- <p>Well, time ago I was wondering that, and I came to the conclusion that this tool is: the one that few people really know and the one that a lot of people have no idea that it exist</p>
+//- <p>This "terminal" or in common language known as "CMD" by some or "Command promtp" for others, is notthing more than a program, as it doesn't have a graphical interface allow us to manipulate the Operating system in a fast and advance way based on commands. This terminal is divided in two the Terminal itself (interface) and the shell (the core).</p>
+//- <P>In technical words, the terminal is that interface that allow us to interact with the shell, and the shell is the text interface that take the commands and translate it to machine language to say to the computer what it has to do</P>
+//- <p>Advantage </p>
+//- <ul> 
+//- <li><span>Over 9000</span>
+//- <p>The work flow i really fast, since as it doesn't have a graphical interface, all the commands executes in a direct way with the computer. Compared to a graphical interface, in addition to being pretty, it require more resourses and other commands that runs alongside what we need, as extra services.</p>
+//- </li>
+//- <li> <span>Danger Zone</span>
+//- <p>Since as we can work without a graphical interface, the command prompt allow us to communicate with low layers of the operating systems, it can be positive regarding to work flow, but also it can result dangerous, because while we work at low layers of the O.S. we can execute commands that can damage or delete primal files of our system </p>
+//- </li>
+//- <li> <span>Hacking like a boss </span>
+//- <p>You can´t deny it, using the command prompt makes us feel like movie hacker, and although it is different from reality, believe it!, someome that doesn't know about it and sees you using the command prompt will think that you're a hacker, even if you only know how to do this: </p>
+//- <div class="image d-flex justify-content-center p-5"><img src="https://bl3302files.storage.live.com/y4mJhX5MeCoqcF-CGxl_nYTNTPO_5lVChydGuvEn7R6hXxqK0ZrSMUTQOqT5zJ5jTnwohuajdgjQj1YzUu3SoJd7uufM-7dr0Uk4kQapft24JypOYix-jjYUucnOiyivrHFVCAmdqk5jD86G1aVWJq9lfhAUm8KI3qvdGKU9wci7MfYResweUxuy8YJ6UBZtiso?width=327&amp;height=167&amp;cropmode=none" alt="cowsay image"></div>
+//- </li>
+//- </ul>
+//- </div></div>
+//- <div class="modal-footer">
+//- </div>
+//- </div>
+//- </div>
+//- </div>
+

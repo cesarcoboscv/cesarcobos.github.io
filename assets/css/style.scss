@@ -62,6 +62,9 @@ html {
 .width-100vw{
     width: 100vw;
 }
+.width-90{
+    width: 90%;
+}
 .width-90vw{
     width: 90vw;
 }
@@ -79,6 +82,9 @@ html {
 }
 .width-16{
     width: 4rem;
+}
+.height-40vh{
+    height: 40vh;
 }
 .height-100vh{
     height: 100vh;
@@ -110,6 +116,9 @@ html {
 .index-over{
     z-index: 3;
 }
+.index-2{
+    z-index: 2;
+}
 
 // align options
 .justify-center{
@@ -117,6 +126,9 @@ html {
 }
 .justify-between{
     justify-content: space-between;
+}
+.justify-end{
+    justify-content: end;
 }
 .items-center{
     align-items: center;
@@ -139,7 +151,9 @@ html {
 .margin-top-12{
     margin-top: 3rem;
 }
-
+.margin-top-16{
+    margin-top: 4rem;
+}
 .overflow-hidden{
     overflow: hidden;
 }
@@ -157,11 +171,23 @@ html {
 .padding-4{
     padding: 1rem;
 }
+.padding-y-2{
+    padding: .5rem 0;
+}
+.padding-y-4{
+    padding: 1rem 0;
+}
 .padding-y-6{
     padding: 1.5rem 0;
 }
+.padding-y-12{
+    padding: 3rem 0;
+}
 .padding-top-12{
     padding-top: 3rem;
+}
+.padding-bottom-6{
+    padding-bottom: 1.5rem;
 }
 .padding-bottom-12{
     padding-bottom: 3rem;
@@ -361,7 +387,51 @@ html {
     width: 100%;
 
 }
+.blog-card-title > p, .blog-card-date > p{
+    background-color: #e6e6e67a;
+    border-radius: 4px;
+    padding: 4px;
+}
+.blog-card-date{
+    padding: 24px 0;
+}
+.blog-card{
+    background-color: var(--light-color);
+    border-radius: 8px;
+    box-shadow:  28px 28px 70px #cfcfcf,-28px -28px 70px #ffffff;
+}
+.blog-card-image{
+    height: 16vh;
+    border-radius: 12px 12px 0 0px;
+    padding-top: 12px;
+    background-image: url("https://drive.google.com/uc?export=view&id=1OH1Ugx1TskcV7tZ-uoQJWFKzh5srPisX");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.blog-card-info{
+    padding: 24px;
+}
 
+.blog-section{
+    background-color: #1d1e1f;
+}
+
+.blog-button{
+    padding: 8px 12px;
+    // border-radius: 8px;
+    border:none;
+    border-radius: 8px;
+    // background: #ffffff;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow:  15px 15px 30px #c2c2c2,
+             -15px -15px 30px #ffffff;
+    &:hover{
+        // background: linear-gradient(145deg, #ffffff, #e6e6e6);
+        background: #ffffff;
+    }
+
+}
 // screen size options
 @media screen and (max-height: 468px) {
     .side-nav {padding-top: 15px;}
@@ -456,6 +526,11 @@ p > span{
     .grid-container{
          grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
     }
+    .grid-blog-container{
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: 24px;
+   }
+   
 }
 
 
