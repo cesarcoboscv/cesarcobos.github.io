@@ -522,6 +522,8 @@ html a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+    top: 16px;
+    right: 16px;
   }
 
   .side-nav {
