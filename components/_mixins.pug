@@ -1,5 +1,5 @@
 mixin menuItem(link,name,class_1,class_2,class_3,tooltip)
-    a.grayed-color.transition-3s.accent-hover.display-block(href=link rel="noreferrer" class=class_1 class=class_2 class=class_3)=name
+    a.grayed-color.transition-3s.accent-hover.display-block(href=link rel="noreferrer" onClick="closeNav()" class=class_1 class=class_2 class=class_3)=name
         .span=tooltip
 mixin menuItemDisabled(link,name,class_1,class_2,class_3,tooltip)
     a.grayed-color.transition-3s.accent-hover-third.display-block(href=link rel="noreferrer" onClick="return false" class=class_1 class=class_2 class=class_3)=name
@@ -23,7 +23,7 @@ mixin divider-title(title,id)
     div.divider-title.margin-y-16.padding-top-12.max-width-1300px.width-90vw.display-flex.justify-center.title-container(id=id)
         div.width-90vw.max-width-1300.padding-top-12
             p.accent-color-second def
-                span.padding-x-1.text-size-3xl.font-mono()=title
+                span.padding-x-4.text-size-3xl.font-mono()=title
                 span.font-thin ( )
                 span.accent-color-third :
 

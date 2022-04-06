@@ -10,6 +10,7 @@
     --accent-color-second:#5d23b9;
     --accent-color-third: #FF5151;
 }
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400&display=swap');
 
@@ -18,7 +19,8 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--dark-color);
-    font-family: "Spartan", sans-serif;
+    // font-family: 'Grape Nuts', cursive;
+    
 }
 
 
@@ -32,6 +34,7 @@ html {
     a {
     text-decoration: none;
     }
+    font-family: 'Spartan', sans-serif;
 } 
 
 

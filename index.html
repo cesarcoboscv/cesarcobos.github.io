@@ -15,8 +15,8 @@
       <div class="nav-bar background-light index-over bottom-0 display-flex position-fixed width-100vw place-center transition-5s" id="nav">
         <div class="nav-container display-inherit justify-between items-center width-100vw height-16 max-width-1300 padding-x-8">
           <div class="nav-container-left text-size-3xl">
-            <div class="menu-items side-nav background-dark top-0 media-lg-flex-column height-100 transition-5s overflow-hidden position-fixed" id="sideNav"><span aria-label="closebutton" class="grayed-color closebtn media-sm-bottom-24px media-lg-top-0 accent-hover text-size-5xl position-absolute " onClick="closeNav()">&times;</span><a class="grayed-color transition-3s accent-hover display-block translate-hover-x-32 margin-top-12" href="../#hero" rel="noreferrer">Home
-                <div class="span"></div></a><a class="grayed-color transition-3s accent-hover display-block translate-hover-x-32" href="../#aboutme" rel="noreferrer">About_me
+            <div class="menu-items side-nav background-dark top-0 media-lg-flex-column height-100 transition-inherit overflow-hidden position-fixed" id="sideNav"><span aria-label="closebutton" class="grayed-color closebtn media-sm-bottom-24px media-lg-top-0 accent-hover text-size-5xl position-absolute " onClick="closeNav()">&times;</span><a class="grayed-color transition-3s accent-hover display-block translate-hover-x-32 margin-top-12" href="../#hero" rel="noreferrer" onClick="closeNav()">Home
+                <div class="span"></div></a><a class="grayed-color transition-3s accent-hover display-block translate-hover-x-32" href="../#aboutme" rel="noreferrer" onClick="closeNav()">About_me
                 <div class="span"></div></a><a class="grayed-color transition-3s accent-hover-third display-block translate-hover-x-32" href="../projects/" rel="noreferrer" onClick="return false">Projects
                 <div class="span"></div></a><a class="grayed-color transition-3s accent-hover-third display-block translate-hover-x-32" href="../resume/" rel="noreferrer" onClick="return false">Resume
                 <div class="span"></div></a><a class="grayed-color transition-3s accent-hover-third display-block translate-hover-x-32" href="../blog/" rel="noreferrer" onClick="return false">Blog
@@ -29,18 +29,18 @@
       <div id="particles-js"></div>
     </header>
     <div class="hero items-center background-light width-100vw height-100vh" id="hero">
-      <div class="hero-content display-flex items-center height-100vh items-center">
+      <div class="hero-content display-flex items-center height-100 items-center">
         <div class="items-center">
           <div class="typing-container text-uppercase text-size-4xl font-bolder height-16">
-            <div class="typeText text-dark font-bold" id="machine"></div>
+            <div class="typeText text-dark font-bolder" id="machine"></div>
           </div>
         </div>
       </div>
     </div>
-    <main class="lineheight-200">
+    <main>
       <div class="divider-title margin-y-16 padding-top-12 max-width-1300px width-90vw display-flex justify-center title-container" id="aboutme">
         <div class="width-90vw max-width-1300 padding-top-12">
-          <p class="accent-color-second">def<span class="padding-x-1 text-size-3xl font-mono">About Me</span><span class="font-thin">( )</span><span class="accent-color-third">:</span></p>
+          <p class="accent-color-second">def<span class="padding-x-4 text-size-3xl font-mono">About Me</span><span class="font-thin">( )</span><span class="accent-color-third">:</span></p>
         </div>
       </div>
       <div class="aboutme display-flex justify-center items-center width-100vw margin-y-6 position-relative flex-column">
@@ -65,10 +65,10 @@
       </div>
       <div class="divider-title margin-y-16 padding-top-12 max-width-1300px width-90vw display-flex justify-center title-container">
         <div class="width-90vw max-width-1300 padding-top-12">
-          <p class="accent-color-second">def<span class="padding-x-1 text-size-3xl font-mono">What I do</span><span class="font-thin">( )</span><span class="accent-color-third">:</span></p>
+          <p class="accent-color-second">def<span class="padding-x-4 text-size-3xl font-mono">What I do</span><span class="font-thin">( )</span><span class="accent-color-third">:</span></p>
         </div>
       </div>
-      <div class="carrier display-flex justify-center items-center flex-column">
+      <div class="carrier display-flex justify-center items-center flex-column lineheight-200">
         <div class="div max-width-1300 width-90vw">
           <p>
             Besides my engineering <span>experience</span>  I´m leading a new path to 
