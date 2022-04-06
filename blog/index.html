@@ -15,11 +15,11 @@
     <div class="nav-bar background-light index-over bottom-0 display-flex position-fixed width-100vw place-center transition-5s" id="nav">
       <div class="nav-container display-inherit justify-between items-center width-100vw height-16 max-width-1300 padding-x-8">
         <div class="nav-container-left text-size-3xl">
-          <div class="menu-items side-nav background-dark top-0 media-lg-flex-column height-100 transition-inherit overflow-hidden position-fixed" id="sideNav"><span aria-label="closebutton" class="grayed-color closebtn media-sm-bottom-24px media-lg-top-0 accent-hover text-size-5xl position-absolute " onClick="closeNav()">&times;</span><a class="grayed-color transition-3s accent-hover display-block translate-hover-x-32 margin-top-12" href="../#hero" rel="noreferrer" onClick="closeNav()">Home
+          <div class="menu-items side-nav background-dark top-0 media-lg-flex-column height-100 transition-5s overflow-hidden position-fixed" id="sideNav"><span aria-label="closebutton" class="grayed-color closebtn media-sm-bottom-24px media-lg-top-0 accent-hover text-size-5xl position-absolute " onClick="closeNav()">&times;</span><a class="grayed-color transition-3s accent-hover display-block translate-hover-x-32 margin-top-12" href="../#hero" rel="noreferrer" onClick="closeNav()">Home
               <div class="span"></div></a><a class="grayed-color transition-3s accent-hover display-block translate-hover-x-32" href="../#aboutme" rel="noreferrer" onClick="closeNav()">About_me
               <div class="span"></div></a><a class="grayed-color transition-3s accent-hover-third display-block translate-hover-x-32" href="../projects/" rel="noreferrer" onClick="return false">Projects
               <div class="span"></div></a><a class="grayed-color transition-3s accent-hover-third display-block translate-hover-x-32" href="../resume/" rel="noreferrer" onClick="return false">Resume
-              <div class="span"></div></a><a class="grayed-color transition-3s accent-hover-third display-block translate-hover-x-32" href="../blog/" rel="noreferrer" onClick="return false">Blog
+              <div class="span"></div></a><a class="grayed-color transition-3s accent-hover display-block translate-hover-x-32" href="../blog/" rel="noreferrer" onClick="closeNav()">Blog
               <div class="span"></div></a>
           </div><span class="menu-icon display-flex justify-center items-center height-16 width-16 padding-4" onClick="openNav()"><i class="fa-solid fa-bars dark dark-text"></i><i class="random fa-solid dark-text dark" id="menu-random"></i></span>
         </div>
@@ -31,33 +31,25 @@
     <div id="particles-js"></div>
     <section class="width-100vw height-100 display-flex margin-top-16 padding-y-6-index-2 position-relative">
       <div class="blog-container display-flex flex-column height-90 width-100vw place-center items-center">
-        <div class="blog-section width-100vw display-flex justify-center padding-y-12 index-2">
-          <div class="principal-article width-100vw height-40vh max-width-1300">
-            <p class="light-text">  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, sapiente itaque. Eius delectus sit minus reprehenderit atque, nemo beatae ipsum, dolore recusandae amet esse blanditiis veritatis accusantium est repellat dignissimos.</p>
-          </div>
-        </div>
-        <div class="grid-blog-container display-grid width-90vw max-width-1300 justify-center padding-top-12 padding-bottom-12">
-          <div class="blog-card display-flex flex-column">
-            <div class="blog-card-image padding-4 display-flex flex-column justify-center">
+        <div class="blog-section width-90vw display-flex justify-center padding-y-12 index-2">
+          <div class="blog-card display-flex width-100vw">
+            <div class="blog-card-info">
               <div class="blog-card-title font-bold">
-                <p>Blog title</p>
+                <p class="font-bold text-size-2xl">What determines the completion of a project on time?</p>
               </div>
               <div class="blog-card-date display-flex justify-between font-italic width-90">
-                <p class="text-size-small padding-y-2">Write by</p>
-                <p class="text-size-small">Date</p>
+                <p class="text-size-small padding-y-2">Write by César</p>
+                <p class="text-size-small padding-y-2">April 06 2022</p>
               </div>
-            </div>
-            <div class="blog-card-info">
               <div class="blog-tags padding-bottom-6">
-                <p class="text-size-small">Tags</p>
+                <p class="text-size-small">#ProjectManagement</p>
               </div>
               <div class="blog-card-resume">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat modi tempore repellat unde rerum doloribus voluptas error, distinctio eum delectus alias culpa quidem, quo natus, cum facilis dicta dolorem!</p>
+                <p>The reputation of organizations is given by the quality and delivery of their products and/or services on time, but there are factors that can prevent it, anticipating it can be the difference between completing a project or successfully completing a project.</p>
               </div>
-              <div class="blog-buttons padding-y-6 display-flex justify-end">
-                <button class="blog-button" type="button"><a class="font-bold" href="http://">Read button </a></button>
-              </div>
+              <div class="blog-buttons padding-y-6 display-flex justify-end"><span class="blog-button"><a class="font-bold" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:6917524115612459008?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3AugcPost%3A6917524115612459008%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29" rel="noreferrer" target="_blank">Read in LinkedIn</a></span></div>
             </div>
+            <div class="blog-card-image padding-4 image-terminacion-proyecto"></div>
           </div>
         </div>
       </div>
