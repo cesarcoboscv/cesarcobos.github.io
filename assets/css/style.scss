@@ -254,6 +254,9 @@ html {
 .text-size-5xl{
     font-size: 3rem;
 }
+.text-size-6xl{
+    font-size: 3.75rem;
+}
 
 
 .font-thin{
@@ -518,7 +521,6 @@ html {
     .menu-items{
         height: 100vh;
     }
-
     .closebtn{
         justify-content: end;
         top: 16px;
@@ -545,6 +547,14 @@ p > span{
     width: 40vw;
     border-radius: 0px 8px 8px 0px;
    }
+   .scroll-container{
+    display: flex;
+    &:hover{
+        a{
+        transform: translateY(50px);
+        }
+    }
+   }
 }
 
 
@@ -561,9 +571,7 @@ p > span{
     border-radius: 6px;
     font-size: .8rem; 
     min-width: 70px;  
-
     position: absolute;
-    
   }
   .bottom{
     top: 125%;

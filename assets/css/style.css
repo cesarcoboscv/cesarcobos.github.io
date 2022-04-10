@@ -309,6 +309,10 @@ html a {
   font-size: 3rem;
 }
 
+.text-size-6xl {
+  font-size: 3.75rem;
+}
+
 .font-thin {
   font-weight: 100;
 }
@@ -640,6 +644,16 @@ p > span {
   .blog-card-image {
     width: 40vw;
     border-radius: 0px 8px 8px 0px;
+  }
+
+  .scroll-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .scroll-container:hover a {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
 }
 .tooltype {
