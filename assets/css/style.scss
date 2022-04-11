@@ -35,8 +35,11 @@ html {
     text-decoration: none;
     }
     font-family: 'Spartan', sans-serif;
+    font-weight: 300;
 } 
-
+p > span{
+    font-weight: 600;
+}
 
 // Dipslay options
 .display-flex{
@@ -189,8 +192,14 @@ html {
 .padding-y-12{
     padding: 3rem 0;
 }
+.padding-top-6{
+    padding-top: 1.5rem;
+}
 .padding-top-12{
     padding-top: 3rem;
+}
+.padding-bottom-2{
+    padding-bottom: .5rem;
 }
 .padding-bottom-6{
     padding-bottom: 1.5rem;
@@ -313,11 +322,6 @@ html {
     border-top: 1px solid black;
 }
 
-#particles-js{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-}
 
 //not asigned yet
 .button{
@@ -426,10 +430,10 @@ html {
 .blog-card-info{
     padding: 24px;
 }
-
-// .blog-section{
-//     background-color: #1d1e1f;
-// }
+.contact-section{
+    height: 50vh;
+    text-align: center;
+}
 
 .blog-button{
     padding: 8px 12px;
@@ -531,9 +535,7 @@ html {
       }
 }
 
-p > span{
-    font-weight: 600;
-}
+
 
 @media screen and (min-width:600px){
     .grid-container{
@@ -551,7 +553,8 @@ p > span{
     display: flex;
     &:hover{
         a{
-        transform: translateY(50px);
+        transform: translateY(35px);
+        height: 125px;
         }
     }
    }
@@ -597,7 +600,13 @@ p > span{
 .grid-container .card, .button{
     border: 1px solid var(--shadow-text-color);
     border-radius: 12px;
-
+}
+.grid-portfolio{
+    max-width: 800px;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 350px));
+    grid-template-rows: repeat(auto, 75px);
+    gap: 48px;
+    text-align: center;
 }
 .icon-img{
     margin: 16px 4px;

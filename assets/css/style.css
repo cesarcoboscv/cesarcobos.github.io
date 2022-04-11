@@ -29,12 +29,17 @@ html {
   scrollbar-width: none;
   scroll-behavior: smooth;
   font-family: "Spartan", sans-serif;
+  font-weight: 300;
 }
 html::-webkit-scrollbar {
   display: none;
 }
 html a {
   text-decoration: none;
+}
+
+p > span {
+  font-weight: 600;
 }
 
 .display-flex {
@@ -238,8 +243,16 @@ html a {
   padding: 3rem 0;
 }
 
+.padding-top-6 {
+  padding-top: 1.5rem;
+}
+
 .padding-top-12 {
   padding-top: 3rem;
+}
+
+.padding-bottom-2 {
+  padding-bottom: 0.5rem;
 }
 
 .padding-bottom-6 {
@@ -378,12 +391,6 @@ html a {
   border-top: 1px solid black;
 }
 
-#particles-js {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-}
-
 .button {
   margin: 24px;
   padding: 8px 16px;
@@ -489,6 +496,11 @@ html a {
 
 .blog-card-info {
   padding: 24px;
+}
+
+.contact-section {
+  height: 50vh;
+  text-align: center;
 }
 
 .blog-button {
@@ -627,10 +639,6 @@ html a {
     max-width: 300px;
   }
 }
-p > span {
-  font-weight: 600;
-}
-
 @media screen and (min-width: 600px) {
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
@@ -652,8 +660,9 @@ p > span {
     display: flex;
   }
   .scroll-container:hover a {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    -webkit-transform: translateY(35px);
+            transform: translateY(35px);
+    height: 125px;
   }
 }
 .tooltype {
@@ -698,6 +707,15 @@ p > span {
 .grid-container .card, .button {
   border: 1px solid var(--shadow-text-color);
   border-radius: 12px;
+}
+
+.grid-portfolio {
+  max-width: 800px;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 350px));
+  -ms-grid-rows: ;
+  grid-template-rows: repeat(auto, 75px);
+  gap: 48px;
+  text-align: center;
 }
 
 .icon-img {

@@ -1,9 +1,3 @@
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-	return new bootstrap.Tooltip(tooltipTriggerEl)
-})
-
-
 var typeText = document.getElementById("machine")
 var textToBeTyped = "Civil Engineer"
 var textToBeTypedArr = ["Civil Engineering", "Data Science", "Project Management","Mechanical Design", "FrontEnd Dev"]

@@ -1,7 +1,7 @@
 include ./components/_mixins.pug
 
 //- Page title and social 
-- var page_title = "César Cobos Website"
+- var page_title = "César Cobos"
 //- social cards descriptions 
 //- title on Google Search
 -var search_title ="Cesar Valentin Cobos"
@@ -20,13 +20,13 @@ html(lang="en")
 	body
 		header.display-flex.width-100vw.place-center
 			include ./components/_header.pug
-			div#particles-js
 		include ./components/_hero.pug
 		
 		
 		main
 			include ./components/_aboutme.pug
-			include ./components/_whatido.pug
+			include ./components/_portfolio.pug
+			include ./components/_contact.pug
 		footer.display-flex.items-center.justify-center.media-lg-height-144px.media-sm-height-300px
 			include ./components/_footer.pug
 	include ./components/_scripts.pug
