@@ -1,0 +1,12 @@
+form(action="../assets/php/sent.php", method="POST") 
+    ul 
+        li 
+            label(for="nombre") Nombre:
+            input(type="text" id="nombre" name="nombre" placeholder="Nombre")
+        li 
+            label(for="email") Correo electronico 
+            input(type="email" id="email" name="email" placeholder="Correo Electrónico")
+        li  
+            label(for="mensaje") Mensaje 
+            textarea#mensaje(name="mensaje" placeholder="Mensaje") 
+    button(type="submit") Enviar
