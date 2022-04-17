@@ -1,19 +1,25 @@
-.nav-bar#nav(class= "background-light index-over bottom-0 display-flex position-fixed"
-        class="width-100vw"
-        class="place-center"
-        class="transition-5s")
-    .nav-container(class="display-inherit"
-                    class="justify-between items-center"
-                    class="width-100vw height-16 max-width-1300"
-                    class="padding-x-8")
-        .nav-container-left.text-size-3xl
-            .menu-items.side-nav.background-dark.top-0.media-lg-flex-column#sideNav(
-                class="height-100 transition-5s overflow-hidden position-fixed")
+.nav-bar#nav(class= "display-flex position-fixed index-over bottom-0"
+    class="width-100vw"
+    class="justify-center items-center"
+    class="transition-5s background-light")
+    .nav-container(class="display-inherit",
+        class="width-100vw height-16 max-width-1300",
+        class="justify-center items-center")
+        .nav-container-left(class="display-flex"
+                class="justify-center"
+                class="text-size-3xl")
+            .menu-items.side-nav(class="height-100"
+                class="position-fixed top-0"
+                class="media-lg-display-none media-lg-flex-column"
+                class="transition-5s overflow-hidden"
+                class="background-dark")#sideNav
                 +menuBar()
             span.menu-icon(onClick="openNav()"
-                class="display-flex justify-center items-center" 
-                class="height-16 width-16 padding-4")
+                class="display-inherit media-lg-display-none justify-center items-center" 
+                class="height-16 width-16 ")
                 i.fa-solid.fa-bars.dark.dark-text
                 i#menu-random.random.fa-solid.dark-text.dark
-        .nav-container-right(class="display-inherit padding-x-4")
+        .nav-container-largemenu.display-none.media-lg-display-flex
+            +largeMenuBar()
+        .nav-container-right(class="display-inherit position-absolute")
             span.light-text Cesar Cobos
