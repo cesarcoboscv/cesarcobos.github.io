@@ -1,0 +1,27 @@
+include ../components/_mixins.pug
+
+//- Page title and social 
+- var page_title = "Let's talk"
+//- social cards descriptions 
+//- title on Google Search
+-var search_title ="Cesar Valentin Cobos"
+//- ogtitle = card title
+- var ogtitle = "César Valentín Cobos"
+//- nameDescription = card description
+- var nameDescription = "Let's talk and workd together"
+//- ogimage = image
+
+
+doctype html
+html(lang="en")
+    head
+       include ../components/_head.pug
+    body 
+      header   
+         include ../components/_header.pug
+      body 
+         include ../components/_contact_main.pug
+      footer.display-flex.items-center.justify-center.media-lg-height-144px.media-sm-height-300px
+         include ../components/_footer.pug
+
+      include ../components/_scripts.pug

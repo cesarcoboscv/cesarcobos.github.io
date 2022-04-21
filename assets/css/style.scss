@@ -80,6 +80,9 @@ p > span{
 .width-80vw{
     width: 80vw;
 }
+.width-70{
+    width: 70%;
+}
 .max-width-1300{
     max-width: 1300px;
 }
@@ -92,6 +95,9 @@ p > span{
 .width-16{
     width: 4rem;
 }
+// .height-16{
+//     height: 4rem;
+// }
 .height-40vh{
     height: 40vh;
 }
@@ -162,6 +168,12 @@ p > span{
 }
 .margin-top-16{
     margin-top: 4rem;
+}
+.margin-bottom-8{
+    margin-bottom: 2rem;
+}
+.margin-left-12{
+    margin-left: 3rem;
 }
 .overflow-hidden{
     overflow: hidden;
@@ -564,7 +576,24 @@ p > span{
         max-width: 300px;
       }
 }
-
+#sentButton{
+    padding: 12px;
+    background: transparent;
+    border-radius: 16px;
+    border:1px solid black
+}
+#sentButton:hover{
+    box-shadow: 0px 0px 10px rgba(122, 122, 122, 0.5);
+}
+#name, #message, #email{
+    min-width: 350px;
+    padding: 16px;
+    width: 30vw;
+    border-radius: 16px;
+    border:solid 1px #FF5151;
+    box-shadow: 0px 0px 10px rgba(122, 122, 122, 0.5);
+    
+}
 
 .tooltype {
     position: relative;

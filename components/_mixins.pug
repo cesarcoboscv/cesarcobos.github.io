@@ -10,13 +10,13 @@ mixin menuBar()
     +menuItem("../","Home","translate-hover-x-32", "margin-top-12")
     //- +menuItem("../#aboutme","About_me","translate-hover-x-32")
     //- +menuItem("../blog/","Blog","translate-hover-x-32")
-    //- +menuItemDisabled("../projects/","Projects","traternslate-hover-x-32")
+    +menuItem("../portfolio/","Portfolio","traternslate-hover-x-32")
     //- +menuItemDisabled("../resume/","Resume","translate-hover-x-32")
 
 mixin largeMenuBar()
     +menuItem("../","Home","light-text","padding-x-4")
             //- +menuItem("../#hero","About me","light-text","padding-x-4")
-            //- +menuItem("../#hero","Portfolio","light-text","padding-x-4")
+    +menuItem("../portfolio/","Portfolio","light-text","padding-x-4")
 
 mixin icon(id,alt,tip,pos)
     span.tooltype

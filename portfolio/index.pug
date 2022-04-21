@@ -1,0 +1,29 @@
+include ../components/_mixins.pug
+
+//- Page title and social 
+- var page_title = "César Cobos Portfolio"
+//- social cards descriptions 
+//- title on Google Search
+-var search_title ="Cesar Valentin Cobos"
+//- ogtitle = card title
+- var ogtitle = "César Valentín Cobos"
+//- nameDescription = card description
+- var nameDescription = "Look all projects that I worked in all my experience years and those which we can work together"
+//- ogimage = image
+
+
+doctype html
+html(lang="en")
+    head
+       include ../components/_head.pug
+    body
+        header 
+            include ../components/_header.pug
+
+        main 
+            include ../components/_portfolio_main.pug
+
+        footer.display-flex.items-center.justify-center.media-lg-height-144px.media-sm-height-300px
+            include ../components/_footer.pug
+            
+        include ../components/_scripts.pug
