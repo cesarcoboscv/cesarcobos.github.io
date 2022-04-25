@@ -1,39 +1,39 @@
 mixin menuItem(link,name,class_1,class_2,class_3,tooltip)
-    a.grayed-color.transition-3s.accent-hover.display-block(href=link rel="noreferrer" onClick="closeNav()" translate="no" class=class_1 class=class_2 class=class_3)=name
-        .span=tooltip
+    a(href=link rel="noreferrer" onClick="closeNav()" translate="no" class=class_1 class=class_2 class=class_3 class="hover:text-red-400 ease-in-out duration-500")=name
+        //- .span=tooltip
 mixin menuItemDisabled(link,name,class_1,class_2,class_3,tooltip)
     a.grayed-color.transition-3s.accent-hover-third.display-block(href=link rel="noreferrer" onClick="return false" translate="no" class=class_1 class=class_2 class=class_3)=name
         .span=tooltip
 
 mixin menuBar()
-    <span aria-label="closebutton" class="grayed-color closebtn media-sm-bottom-24px media-lg-top-0 accent-hover text-size-5xl position-absolute " onClick="closeNav()">&times;</span>
-    +menuItem("../","Home","translate-hover-x-32", "margin-top-12")
+    <span aria-label="closebutton" class="w-full h-16 closebtn bottom-0 flex justify-center items-center text-5xl absolute " onClick="closeNav()">&times;</span>
+    +menuItem("../","Home","ml-6", "mt-12")
     //- +menuItem("../#aboutme","About_me","translate-hover-x-32")
     //- +menuItem("../blog/","Blog","translate-hover-x-32")
-    +menuItem("../portfolio/","Portfolio","traternslate-hover-x-32")
+    +menuItem("../portfolio/","Portfolio","mt-6","ml-6")
     //- +menuItemDisabled("../resume/","Resume","translate-hover-x-32")
 
 mixin largeMenuBar()
-    +menuItem("../","Home","light-text","padding-x-4")
+    +menuItem("../","Home","","px-4","hover:text-red-200")
             //- +menuItem("../#hero","About me","light-text","padding-x-4")
-    +menuItem("../portfolio/","Portfolio","light-text","padding-x-4")
+    +menuItem("../portfolio/","Portfolio","hover:text-red-400","px-4")
 
-mixin icon(id,alt,tip,pos)
-    span.tooltype
-        img.icon-img(src=id , alt=alt, width="32px" height="32px",onContextMenu="return false;")
-        +tooltip-text(tip,pos)
+//- mixin icon(id,alt,tip,pos)
+//-     span.tooltype
+//-         img.icon-img(src=id , alt=alt, width="32px" height="32px",onContextMenu="return false;")
+//-         +tooltip-text(tip,pos)
         //- id  https://drive.google.com/uc?export=view&id=1oHDIvVewakJD6LmZKjBAItqlm7fx1cN-
 
-mixin divider-title(title,id)
-    div.divider-title.margin-y-16.padding-top-12.max-width-1300px.width-90vw.display-flex.justify-center.title-container(id=id)
-        div.width-90vw.max-width-1300.padding-top-12
-            p.accent-color-second def
-                span.padding-x-4.text-size-3xl.font-mono()=title
-                span.font-thin ( )
-                span.accent-color-third :
+//- mixin divider-title(title,id)
+//-     div.divider-title.margin-y-16.padding-top-12.max-width-1300px.width-90vw.display-flex.justify-center.title-container(id=id)
+//-         div.width-90vw.max-width-1300.padding-top-12
+//-             p.accent-color-second def
+//-                 span.padding-x-4.text-size-3xl.font-mono()=title
+//-                 span.font-thin ( )
+//-                 span.accent-color-third :
 
-mixin tooltip-text(text,position)
-    span.tooltype-text.light-text.font-italic.font-thin(class=position)=text
+//- mixin tooltip-text(text,position)
+//-     span.tooltype-text.light-text.font-italic.font-thin(class=position)=text
 
-mixin grid-card-container()
-    .grid-container.display-grid.width-90vw.max-width-1300.justify-center.padding-top-12-padding-bottom-12
+//- mixin grid-card-container()
+//-     .grid-container.display-grid.width-90vw.max-width-1300.justify-center.padding-top-12-padding-bottom-12

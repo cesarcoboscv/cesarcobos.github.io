@@ -18,7 +18,7 @@ html(lang="en")
 		include ./components/_head.pug
 		
 	body
-		header.display-flex.width-100vw.place-center
+		header.flex.w-screen.place-center
 			include ./components/_header.pug
 		include ./components/_hero.pug
 		
@@ -26,9 +26,9 @@ html(lang="en")
 		main
 			include ./components/_aboutme.pug
 			include ./components/_portfolio.pug
-			include ./components/_contact.pug
+			//- include ./components/_contact.pug
 			//- include ./components/_form.pug
-		footer.display-flex.items-center.justify-center.media-lg-height-144px.media-sm-height-300px
+		footer.flex.items-center.justify-center(class="h-72 md:h-32")
 			include ./components/_footer.pug
 	include ./components/_scripts.pug
 	

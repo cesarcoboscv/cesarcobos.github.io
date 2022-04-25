@@ -1,13 +1,13 @@
-div.aboutme.display-flex.justify-center.items-center.width-100vw.margin-y-6.position-relative.flex-column.height-100vh#aboutme
-	div.aboutme-container.width-90vw.max-width-1300.display-flex.justify-cente.padding-y-48.media-lg-flex-row.media-sm-flex-column
-		div.about-content
+div.aboutme.flex.justify-center.items-center.w-screen.flex-col.h-screen#aboutme
+	div.aboutme-container.max-w-6xl.flex.flex-col.justify-cente.py-48(class="w-0/12 md:flex-row")
+		div.about-content(class="")
 			div.about-content-description
-				h1.text-size-2xl.font-bolder.padding-bottom-2 Hi! I'm César
-				p.font-italic.font-size-small Civil Engineer | Project Manager
-				p.padding-top-6.lineheight-200 For +3 years I've develop as a Project Manager for different projects, both structural and mechanical design of air cleaning systems in industrial processes in the automotive area.
-				p.padding-y-2.lineheight-200 Graduated fromt Tecnologico Nacional de México Campus Cerro Azul in 2013 as a Civil Engineer. I've develop skills in areas: Project Management, GIS (Geographic Information Systems), Metal Mechanic, and programming.
-				p.padding-y-2.lineheight-200 Asssistant Professor since 2021 at Jeong Shin Moo Taekwondo located in Puebla, Mx. City.
-				p.padding-y-2.lineheight-200 I'm currently improving my skills in engineering area and programming where i've developed knowledge in Data science (from which I obtained a certificate in 2022), Front End development, Python, databases and Digital Marketing.
+				h1.text-2xl.font-bold.pb-2 Hi! I'm César
+				p.italic.text-sm Civil Engineer | Project Manager
+				p.pt-6.leading-relaxed For +3 years I've develop as a Project Manager for different projects, both structural and mechanical design of air cleaning systems in industrial processes in the automotive area.
+				p.py-2.leading-relaxed Graduated fromt Tecnologico Nacional de México Campus Cerro Azul in 2013 as a Civil Engineer. I've develop skills in areas: Project Management, GIS (Geographic Information Systems), Metal Mechanic, and programming.
+				p.py-2.leading-relaxed Asssistant Professor since 2021 at Jeong Shin Moo Taekwondo located in Puebla, Mx. City.
+				p.py-2.leading-relaxed I'm currently improving my skills in engineering area and programming where i've developed knowledge in Data science (from which I obtained a certificate in 2022), Front End development, Python, databases and Digital Marketing.
 			//- div.aboutme-buttons.padding-y-6.display-flex.justify-center.media-lg-flex-end
 			//- 	button(type="button" class="button button-border hover-background-dark tooltype background-transparent transition-5s")
 			//- 		+tooltip-text("View my Projects","bottom")
@@ -19,7 +19,7 @@ div.aboutme.display-flex.justify-center.items-center.width-100vw.margin-y-6.posi
 			//- 		a(href="../resume/" rel="noreferrer") 
 			//- 			span.fa-solid.fa-file-lines
 			//- 			span.padding-x-1 Resume
-		div.aboutme-photo.tooltype.display-flex.justify-center
-			+tooltip-text("This is me")
-			img(src="https://drive.google.com/uc?export=view&id=1GTRVzAfkOw2l_FKBV5MIHN--4A4mEVOH", alt="" width="150px" height="150px" onContextMenu="return false;")
+		div.aboutme-photo.tooltype.flex.justify-center.w-96
+			//- +tooltip-text("This is me")
+			img(src="https://drive.google.com/uc?export=view&id=1GTRVzAfkOw2l_FKBV5MIHN--4A4mEVOH", alt="" width="150px" height="150px" onContextMenu="return false")
 			

@@ -5,3 +5,4 @@
 *.json
 *.config
 *.xd
+/node_modules

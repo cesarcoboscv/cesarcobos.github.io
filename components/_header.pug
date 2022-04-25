@@ -1,25 +1,25 @@
-.nav-bar#nav(class= "display-flex position-fixed index-over bottom-0"
-    class="width-100vw"
-    class="justify-center items-center"
-    class="transition-5s background-light")
-    .nav-container(class="display-inherit",
-        class="width-100vw height-16 max-width-1300",
+.nav-bar#nav(class= "flex fixed z-20 h-16 bottom-0 md:top-0",
+    class="w-screen",
+    class="justify-center items-center",
+    class="bg-slate-100 dark ease-in-out duration-500")
+    .nav-container(class="flex",
+        class="w-full max-w-6xl",
         class="justify-center items-center")
-        .nav-container-left(class="display-flex"
-                class="justify-center"
-                class="text-size-3xl")
-            .menu-items.side-nav(class="height-100"
-                class="position-fixed top-0"
-                class="media-lg-display-none media-lg-flex-column"
-                class="transition-5s overflow-hidden"
-                class="background-dark")#sideNav
+        .nav-container-left(class="flex md:hidden"
+            class="justify-center"
+            class="text-3xl")
+            .menu-items.side-nav(class="h-full ease-in-out duration-500 w-0 left-0 pt-12 max-w-3xl"
+                class="fixed top-0"
+                class="md:hidden flex flex-col"
+                class="overflow-hidden"
+                class="bg-stone-900 text-slate-100 font-light")#sideNav
                 +menuBar()
             span.menu-icon(onClick="openNav()"
-                class="display-inherit media-lg-display-none justify-center items-center" 
-                class="height-16 width-16 ")
-                i.fa-solid.fa-bars.dark.dark-text
-                i#menu-random.random.fa-solid.dark-text.dark
-        .nav-container-largemenu.display-none.media-lg-display-flex
+                class="flex md:hidden justify-center items-center" 
+                class="h-16 w-16 ")
+                i.fa-solid.fa-bars
+                //- i#menu-random.random.fa-solid
+        .nav-container-largemenu.hidden(class="md:flex")
             +largeMenuBar()
-        .nav-container-right(class="display-inherit position-absolute")
-            span.light-text Cesar Cobos
+        .nav-container-right(class="flex absolute right-8 md:right-1/5 md:mr-16")
+            span.scroll-hidden.hidden.text-xl Cesar Cobos

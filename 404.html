@@ -20,26 +20,22 @@
   <meta property="twitter:title"/>
   <meta property="twitter:description"/>
   <meta property="twitter:image" content="https://drive.google.com/uc?export=view&amp;id=1-GX8SRRG9c32qadDJ1zrPIa8DSNAOzoF"/>
-  <link rel="preload" href="../assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+  <link rel="preload" href="../assets/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
   <noscript> 
-    <link rel="stylesheet" href="../assets/css/style.css"/>
+    <link rel="stylesheet" href="../assets/css/styles.css"/>
   </noscript><meta name="robots" content="noindex,nofollow">
 </head>
 <body>
   <header class="display-flex width-100vw place-center">
-    <div class="nav-bar display-flex position-fixed index-over bottom-0 width-100vw justify-center items-center transition-5s background-light" id="nav">
-      <div class="nav-container display-inherit width-100vw height-16 max-width-1300 justify-center items-center">
-        <div class="nav-container-left display-flex justify-center text-size-3xl">
-          <div class="menu-items side-nav height-100 position-fixed top-0 media-lg-display-none media-lg-flex-column transition-5s overflow-hidden background-dark" id="sideNav"><span aria-label="closebutton" class="grayed-color closebtn media-sm-bottom-24px media-lg-top-0 accent-hover text-size-5xl position-absolute " onClick="closeNav()">&times;</span><a class="grayed-color transition-3s accent-hover display-block translate-hover-x-32 margin-top-12" href="../" rel="noreferrer" onClick="closeNav()" translate="no">Home
-              <div class="span"></div></a><a class="grayed-color transition-3s accent-hover display-block traternslate-hover-x-32" href="../portfolio/" rel="noreferrer" onClick="closeNav()" translate="no">Portfolio
-              <div class="span"></div></a>
-          </div><span class="menu-icon display-inherit media-lg-display-none justify-center items-center height-16 width-16 " onClick="openNav()"><i class="fa-solid fa-bars dark dark-text"></i><i class="random fa-solid dark-text dark" id="menu-random"></i></span>
+    <div class="nav-bar flex fixed z-20 h-16 bottom-0 md:top-0 w-screen justify-center items-center bg-slate-100 dark ease-in-out duration-500" id="nav">
+      <div class="nav-container flex w-full max-w-6xl justify-center items-center">
+        <div class="nav-container-left flex md:hidden justify-center text-3xl">
+          <div class="menu-items side-nav h-full ease-in-out duration-500 w-0 left-0 pt-12 max-w-3xl fixed top-0 md:hidden flex flex-col overflow-hidden bg-stone-900 text-slate-100 font-light" id="sideNav"><span aria-label="closebutton" class="w-full h-16 closebtn bottom-0 flex justify-center items-center text-5xl absolute " onClick="closeNav()">&times;</span><a class="ml-6 mt-12 hover:text-red-400 ease-in-out duration-500" href="../" rel="noreferrer" onClick="closeNav()" translate="no">Home</a><a class="mt-6 ml-6 hover:text-red-400 ease-in-out duration-500" href="../portfolio/" rel="noreferrer" onClick="closeNav()" translate="no">Portfolio</a>
+          </div><span class="menu-icon flex md:hidden justify-center items-center h-16 w-16 " onClick="openNav()"><i class="fa-solid fa-bars"></i></span>
         </div>
-        <div class="nav-container-largemenu display-none media-lg-display-flex"><a class="grayed-color transition-3s accent-hover display-block light-text padding-x-4" href="../" rel="noreferrer" onClick="closeNav()" translate="no">Home
-            <div class="span"></div></a><a class="grayed-color transition-3s accent-hover display-block light-text padding-x-4" href="../portfolio/" rel="noreferrer" onClick="closeNav()" translate="no">Portfolio
-            <div class="span"></div></a>
+        <div class="nav-container-largemenu hidden md:flex"><a class="px-4 hover:text-red-200 hover:text-red-400 ease-in-out duration-500" href="../" rel="noreferrer" onClick="closeNav()" translate="no">Home</a><a class="hover:text-red-400 px-4 hover:text-red-400 ease-in-out duration-500" href="../portfolio/" rel="noreferrer" onClick="closeNav()" translate="no">Portfolio</a>
         </div>
-        <div class="nav-container-right display-inherit position-absolute"><span class="light-text">Cesar Cobos</span></div>
+        <div class="nav-container-right flex absolute right-8 md:right-1/5 md:mr-16"><span class="scroll-hidden hidden text-xl">Cesar Cobos</span></div>
       </div>
     </div>
   </header>
@@ -51,9 +47,9 @@
     </div>
   </main>
   <footer class="display-flex items-center justify-center position-fixed bottom-100 width-100vw">
-    <div class="footer-container width-100vw display-flex justify-center items-center max-width-1300 text-size-3xl media-lg-flex-row media-lg-justify-between media-sm-flex-column border-top-black">
-      <div class="footer-container-right display-flex padding-y-6 padding-x-8 media-lg-margin-right-48"><a class="padding-x-8" href="http://linkedin.com/in/cesarcoboscv" rel="noreferrer" target="_blank" aria-label="LinkedIn"><span class="fa-brands fa-linkedin-in transition-3s tooltype"><span class="tooltype-text light-text font-italic font-thin top">Watch mi profile on LinkedIn</span></span></a><a class="padding-x-8" href="http://twitter.com/cesarcoboscv" rel="noreferrer" target="_blank" aria-label="Twitter"><span class="fa-brands fa-twitter transition-3s tooltype"><span class="tooltype-text light-text font-italic font-thin top">Follow me on Twitter</span></span></a><a class="padding-x-8" href="http://github.com/cesarcoboscv" rel="noreferrer" target="_blank" aria-label="GitHub"><span class="fa-brands fa-github transition-3s tooltype"><span class="tooltype-text light-text font-italic font-thin top">See my projects on Github</span></span></a></div>
-      <div class="footer-container-left text-size-small padding-x-8 media-lg-margin-left-48"><span translate="no">Cesar Cobos 202?</span></div>
+    <div class="footer-container w-screen flex justify-center items-center max-w-6xl flex-col border-t-2 border-black md:flex-row md:justify-between md:p-6">
+      <div class="footer-container-right flex py-6 md:py-0 text-4xl md:text-2xl"><a class="px-6" href="http://linkedin.com/in/cesarcoboscv" rel="noreferrer" target="_blank" aria-label="LinkedIn"><span class="fa-brands fa-linkedin-in tooltype"></span></a><a class="px-6" href="http://twitter.com/cesarcoboscv" rel="noreferrer" target="_blank" aria-label="Twitter"><span class="fa-brands fa-twitter tooltype"></span></a><a class="px-6" href="http://github.com/cesarcoboscv" rel="noreferrer" target="_blank" aria-label="GitHub"><span class="fa-brands fa-github tooltype"></span></a></div>
+      <div class="footer-container-left text-xs"><span translate="no">Cesar Cobos 202?</span></div>
     </div>
     <script src="../assets/js/main.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/32dce108fb.js" crossorigin="anonymous"></script>

@@ -49,35 +49,41 @@ function closeNav() {
 }
 
 
-var menuRandom = document.getElementById("menu-random");
-  var arr = ["fa-satellite","fa-radiation","fa-jedi","fa-rocket","fa-atom","fa-seedling","fa-wifi","fa-user-astronaut","fa-hand-spock","fa-dragon","fa-pizza-slice","fa-cat","fa-burger","fa-bacon","fa-utensils","fa-cookie", "fa-fish"];
-  var randomItem = arr[Math.floor(Math.random()*arr.length)];
-window.onload = function(){
-  menuRandom.classList.add(randomItem)
-  // console.log(randomItem);
-};
+// var menuRandom = document.getElementById("menu-random");
+//   var arr = ["fa-satellite","fa-radiation","fa-jedi","fa-rocket","fa-atom","fa-seedling","fa-wifi","fa-user-astronaut","fa-hand-spock","fa-dragon","fa-pizza-slice","fa-cat","fa-burger","fa-bacon","fa-utensils","fa-cookie", "fa-fish"];
+//   var randomItem = arr[Math.floor(Math.random()*arr.length)];
+// window.onload = function(){
+//   menuRandom.classList.add(randomItem)
+//   // menuRandom.classList.add("hidden")
+//   // console.log(randomItem);
+// };
 
 
 var barNav = document.getElementById("nav");
 var elements = document.getElementsByClassName("dark");
+var scrollElement = document.getElementsByClassName("scroll-hidden");
 window.onscroll = function(){
     if (document.documentElement.scrollTop >= 80){
-        barNav.classList.add("background-dark");
-        barNav.classList.remove("background-light")
+        barNav.classList.add("bg-stone-900");
+        barNav.classList.remove("bg-slate-100")
         // console.log("Scroll On - color change");
         for (let i = 0; i < elements.length; i++){
           
-          elements[i].classList.remove("dark-text")
-          elements[i].classList.add("light-text")
+          elements[i].classList.remove("text-dark")
+          elements[i].classList.add("text-slate-100")
+          scrollElement[i].classList.add("flex")
+          scrollElement[i].classList.remove("hidden")
         }
     }else{
-        barNav.classList.remove("background-dark")
-        barNav.classList.add("background-light");
+        barNav.classList.remove("bg-stone-900")
+        barNav.classList.add("bg-slate-100");
         // console.log("Scroll Off - color change");
         for (let i = 0; i < elements.length; i++){
           
-          elements[i].classList.remove("light-text")
-          elements[i].classList.add("dark-text")
+          elements[i].classList.remove("text-slate-100")
+          elements[i].classList.add("text-dark")
+          scrollElement[i].classList.add("hidden")
+          scrollElement[i].classList.remove("flex")
         }
 
     }
