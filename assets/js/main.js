@@ -64,23 +64,23 @@ var elements = document.getElementsByClassName("dark");
 var scrollElement = document.getElementsByClassName("scroll-hidden");
 window.onscroll = function(){
     if (document.documentElement.scrollTop >= 80){
-        barNav.classList.add("bg-stone-900");
-        barNav.classList.remove("bg-slate-100")
+        barNav.classList.add("bg-zinc-900");
+        // barNav.classList.remove("bg-zinc-100")
         // console.log("Scroll On - color change");
         for (let i = 0; i < elements.length; i++){
           
           elements[i].classList.remove("text-dark")
-          elements[i].classList.add("text-slate-100")
+          elements[i].classList.add("text-zinc-100")
           scrollElement[i].classList.add("flex")
           scrollElement[i].classList.remove("hidden")
         }
     }else{
-        barNav.classList.remove("bg-stone-900")
-        barNav.classList.add("bg-slate-100");
+        barNav.classList.remove("bg-zinc-900")
+        // barNav.classList.add("bg-zinc-100");
         // console.log("Scroll Off - color change");
         for (let i = 0; i < elements.length; i++){
           
-          elements[i].classList.remove("text-slate-100")
+          elements[i].classList.remove("text-zinc-100")
           elements[i].classList.add("text-dark")
           scrollElement[i].classList.add("hidden")
           scrollElement[i].classList.remove("flex")
