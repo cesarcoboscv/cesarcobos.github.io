@@ -5,20 +5,22 @@ include ./components/_mixins.pug
 	head
 		include ./components/_head.pug
 		<meta name="robots" content="noindex,nofollow">
+		include ./components/_scripts.pug
+		
 	body
-		header.display-flex.width-100vw.place-center
+		header
 			include ./components/_header.pug
 
-	
-		main.display-flex.justify-center.items-center
-			.error-section.display-flex.flex-column.width-90vw.height-80vh.justify-center.items-center
-				p.font-bold.text-size-5xl Oh no!!!
-				p.text-size-3xl.font-bold.flip-xy.lineheight-400 404 Error
-				p Don't worry, you can get back to a previous page by clicking on the menu
-		
+		main
+			section.error-section.flex.w-screen.justify-center.items-center(class="h-screen")
+				.flex.flex-col.justify-center.items-center(class="w-5/6 h-8/12")
+					p.font-bold.text-5xl Oh no!!!
+					p.text-3xl.font-bold.py-4.flip 404 Error
+					p Don't worry, you can get back to a previous page by clicking on the menu
+			
 
-		footer.display-flex.items-center.justify-center.position-fixed.bottom-100.width-100vw
+		footer.flex.items-center.justify-center.fixed.bottom-0.w-screen.mb-16(class="md:mb-0")
 			include ./components/_footer.pug
 		
-			include ./components/_scripts.pug
+			
 </html>

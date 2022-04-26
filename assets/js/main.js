@@ -65,7 +65,7 @@ var scrollElement = document.getElementsByClassName("scroll-hidden");
 window.onscroll = function(){
     if (document.documentElement.scrollTop >= 80){
         barNav.classList.add("bg-zinc-900");
-        // barNav.classList.remove("bg-zinc-100")
+        barNav.classList.remove("bg-white")
         // console.log("Scroll On - color change");
         for (let i = 0; i < elements.length; i++){
           
@@ -76,7 +76,7 @@ window.onscroll = function(){
         }
     }else{
         barNav.classList.remove("bg-zinc-900")
-        // barNav.classList.add("bg-zinc-100");
+        barNav.classList.add("bg-white");
         // console.log("Scroll Off - color change");
         for (let i = 0; i < elements.length; i++){
           

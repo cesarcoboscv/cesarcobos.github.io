@@ -16,14 +16,16 @@ doctype html
 html(lang="en")
     head
        include ../components/_head.pug
+       include ../components/_scripts.pug
     body
         header 
             include ../components/_header.pug
+            script(src="../assets/js/main.js" type="text/javascript")
 
-        main 
+        main
             include ../components/_portfolio_main.pug
 
         footer.flex.items-center.justify-center(class="h-72 md:h-32")
             include ../components/_footer.pug
             
-        include ../components/_scripts.pug
+        
